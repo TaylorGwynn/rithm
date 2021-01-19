@@ -19,16 +19,16 @@ public class timerVisualize : MonoBehaviour
         switch (note_type)
         {
             case 1:
-                myVector.y = (float)timer.bar           /1 ;
+                myVector.y = (float)timer.getBar()           /1 ;
                 break;
             case 2:
-                myVector.y = (float)timer.half       %2   /2 ;
+                myVector.y = (float)timer.getHalf()       %2   /2 ;
                 break;
             case 4:
-                myVector.y = (float)timer.quarter    %4   /4 ;
+                myVector.y = (float)timer.getQuarter()    %4   /4 ;
                 break;
             case 8:
-                myVector.y = (float)timer.eighth     %8   /8 ;
+                myVector.y = (float)timer.getEighth()    %8   /8 ;
                 break;
             case 16:
                 myVector.y = (float)timer.sixteenth   %16  /16 ;

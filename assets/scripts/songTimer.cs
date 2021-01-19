@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class songTimer : MonoBehaviour
 {
-    public int bar, half, quarter, eighth, sixteenth;
+    public int sixteenth;
     private float timer;
     public int BPM = 120;
     private float bpm_scale;
@@ -19,15 +19,25 @@ public class songTimer : MonoBehaviour
     void Update()
     {   
         timer += Time.deltaTime;
-        bar         = Mathf.FloorToInt( timer /4 / bpm_scale );
-        half        = Mathf.FloorToInt( timer /2 / bpm_scale );
-        quarter     = Mathf.FloorToInt( timer    / bpm_scale );
-        eighth      = Mathf.FloorToInt( timer *2 / bpm_scale );
+        
         sixteenth   = Mathf.FloorToInt( timer *4 / bpm_scale );
         // print(bar);
     }
-    void restart(){
-        timer = bar = half = quarter = eighth = sixteenth = 0;
+    public int getEighth(){
+        return sixteenth/2;
+    }
+    public int getQuarter(){
+        return sixteenth/4;
+    }
+    public int getHalf(){
+        return sixteenth/8;
+    }
+    public int getBar(){
+        return sixteenth/16;
+    }
+
+    public void restart(){
+        sixteenth = 0;
     }
 }
 
