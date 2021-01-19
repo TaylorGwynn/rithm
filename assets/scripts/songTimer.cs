@@ -18,7 +18,7 @@ public class songTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        print(Time.deltaTime);
+        // print(Time.deltaTime);
         timer += Time.deltaTime;
         
         sixteenth   = Mathf.FloorToInt( timer *4 / bpm_scale );
