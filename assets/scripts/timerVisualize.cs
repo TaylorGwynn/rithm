@@ -2,19 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//this class takes in a song via its passed songLoader or just raw note inputs
+// and displays the notes in time via some sort of motion
 public class timerVisualize : MonoBehaviour
 {
     public int note_type = 1;
     public songTimer timer;
-    Song song;
-    Vector3 newVector;
-    long nextNoteVal;
-    int nextNoteIdx = 0;
+    public songLoader songLoader;
+    protected Song song;
+    protected Vector3 newVector;
+    protected long nextNoteVal;
+    protected int nextNoteIdx = 0;
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
+
+        if (timer == null){
+            timer = (songTimer)GameObject.Find("songTimer").GetComponent(typeof(songTimer));
+        }
+        if (songLoader == null){
+            song = new Song("eighth","1 1 111 1111 11 ");
+        }else{
+            song = songLoader.song;
+        }
         newVector.x = this.transform.position.x;
-        song = new Song("eighth","1 1 111 1111 11 ");
         nextNoteVal = song.notes[nextNoteIdx].sixteenth;
     }
 
@@ -44,7 +55,12 @@ public class timerVisualize : MonoBehaviour
                 if (timer.sixteenth == nextNoteVal){
                     newVector.x = (newVector.x +1)%2;
                     nextNoteIdx++;
-                    nextNoteVal = song.notes[nextNoteIdx].sixteenth;
+                    //reached end?
+                    if (nextNoteIdx >= song.notes.Count){
+                        nextNoteVal = -1;//don't check again
+                    }else{
+                        nextNoteVal = song.notes[nextNoteIdx].sixteenth;
+                    }
                 }break;
 
             default:
