@@ -7,6 +7,7 @@ public class songTimer : MonoBehaviour
     public int sixteenth;
     private float timer;
     public int BPM = 120;
+    public bool playing = true;
     private float bpm_scale;
     // Start is called before the first frame update
     void Start()
@@ -18,11 +19,13 @@ public class songTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        // print(Time.deltaTime);
-        timer += Time.deltaTime;
-        
-        sixteenth   = Mathf.FloorToInt( timer *4 / bpm_scale );
-        // print(bar);
+        if(playing){
+            // print(Time.deltaTime);
+            timer += Time.deltaTime;
+            
+            sixteenth   = Mathf.FloorToInt( timer *4 / bpm_scale );
+            // print(bar);
+        }
     }
     public int getEighth(){
         return sixteenth/2;

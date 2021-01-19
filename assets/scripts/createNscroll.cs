@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class createNscroll : MonoBehaviour
 {
-    public GameObject note;
-    public List<GameObject> notes;
+    public GameObject thing;
+    public List<GameObject> things;
     // Start is called before the first frame update
     void Start()
     {
         float dt = Time.deltaTime;
         
-        notes.Add(Instantiate(note, this.transform.position, this.transform.rotation));
-        notes.Add(Instantiate(note, this.transform.position, this.transform.rotation));
+        things.Add(Instantiate(thing, this.transform.position, this.transform.rotation));
+        things.Add(Instantiate(thing, this.transform.position, this.transform.rotation));
         this.transform.Translate(0,0,dt);
     }
 
@@ -21,9 +21,9 @@ public class createNscroll : MonoBehaviour
     {   
         float dt = Time.deltaTime;
         this.transform.Translate(0,dt,dt);
-        foreach (GameObject n in notes)
+        foreach (GameObject n in things)
         {   
-            n.transform.Translate(5f*dt, 5f*dt, 1);
+            n.transform.Translate(dt/9, dt/9, 1);
         }
     }
 }

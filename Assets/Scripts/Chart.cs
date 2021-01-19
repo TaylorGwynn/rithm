@@ -15,6 +15,8 @@ public class Chart : MonoBehaviour
     public Material quarterMaterial;
     public Material eighthMaterial;
     public Material sixteenthMaterial;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -45,9 +47,10 @@ public class Chart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //TODO BPM math
-        scrollTex(Time.deltaTime);
-        scrollNotes(Time.deltaTime);
+        if (timer.playing){
+            //TODO BPM math
+            scrollAll(Time.deltaTime/2);
+        }
     }
 
     void spawnNotes(){
@@ -74,12 +77,16 @@ public class Chart : MonoBehaviour
         }
     }
 
+    void scrollAll(float y){
+        scrollTex(y);
+        scrollNotes(y);
+    }
     void scrollTex(float y){
         Vector2 currOffset = grid.GetTextureOffset("_MainTex");
-        grid.SetTextureOffset("_MainTex",currOffset + new Vector2(0,y));
+        grid.SetTextureOffset("_MainTex",currOffset + new Vector2(0,-y));
     }
     void scrollNotes(float y){
-        songTop.transform.Translate(0,-y*this.transform.localScale.y/2,0);
+        songTop.transform.Translate(0,y*this.transform.localScale.y/2,0);
     }
 
 }
