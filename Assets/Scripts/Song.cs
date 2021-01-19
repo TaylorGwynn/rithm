@@ -10,8 +10,10 @@ public enum BeatSize{
     eighth = 2,
     sixteenth = 1
 }
+
+[Serializable]
 public class Song {
-    public string songName {get; set;}
+    public string songName;
     public List<Note> notes = new List<Note>() ;
 
     // creates a song with a list of notes with any characters/spaces, indicating either
@@ -25,21 +27,21 @@ public class Song {
         Debug.Log("Unknown type in Song(fromType) '"+fromType+"', using 16ths.");
         }
 
-        long index = 0;
+        int index = 0;
         foreach (char c in rawSong)
         {
             // TODO change "any character" to match different types of notes
             if(c != ' '){
                 this.notes.Add(new Note(index));
             }
-            index += (long)bSize;
+            index += (int)bSize;
         }
     }
     // creates a song with a list of notes with any characters/spaces, indicating their length
     // as a multiple of 16th notes/rests respectively.
     public Song(int beatLenSixteenths, string rawSong){
         
-        long index = 0;
+        int index = 0;
         foreach (char c in rawSong)
         {
             // TODO change "any character" to match different types of notes

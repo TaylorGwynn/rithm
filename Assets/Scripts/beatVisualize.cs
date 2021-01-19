@@ -19,7 +19,7 @@ public class beatVisualize : timerVisualize
 
         if (timer.sixteenth == nextNoteVal && nextNoteIdx < song.notes.Count ){
             newVector = origin + util.randomVector();
-            nextNoteVal = song.notes[nextNoteIdx++].sixteenth;
+            nextNoteVal = song.notes[nextNoteIdx++].tick;
         }
         this.transform.position = newVector;
 

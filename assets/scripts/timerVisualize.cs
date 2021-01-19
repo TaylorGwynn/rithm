@@ -26,7 +26,7 @@ public class timerVisualize : MonoBehaviour
             song = songLoader.song;
         }
         newVector.x = this.transform.position.x;
-        nextNoteVal = song.notes[nextNoteIdx].sixteenth;
+        nextNoteVal = song.notes[nextNoteIdx].tick;
     }
 
     // Update is called once per frame
@@ -59,7 +59,7 @@ public class timerVisualize : MonoBehaviour
                     if (nextNoteIdx >= song.notes.Count){
                         nextNoteVal = -1;//don't check again
                     }else{
-                        nextNoteVal = song.notes[nextNoteIdx].sixteenth;
+                        nextNoteVal = song.notes[nextNoteIdx].tick;
                     }
                 }break;
 

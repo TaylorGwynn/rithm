@@ -14,6 +14,7 @@ public class jsonTest : MonoBehaviour
     void Start()
     {
         testsong = new Song("eighth","1 1 111 1111 11 ");
+        print(JsonUtility.ToJson(testsong));
     }
 
     // Update is called once per frame
