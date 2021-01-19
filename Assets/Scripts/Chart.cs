@@ -63,7 +63,7 @@ public class Chart : MonoBehaviour
             offset = -(n.tick*(toChartTop/16));
             // TODO can change x pos, and add types here
             notePos = new Vector3(0, offset + toChartTop, -1) + this.transform.position;
-            print("tick: "+n.tick);
+            // print("tick: "+n.tick);
             // TODO optimize by only creating this bar + next... put in Update()...
             curr = Instantiate(GameObject.Find("cone"), notePos, rot);
             curr.transform.parent = songTop.transform;
