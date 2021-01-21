@@ -64,4 +64,8 @@ public class Note
         }
     }
 
+    public static int CompareByTick(Note note1, Note note2){
+        return note1.tick.CompareTo(note2.tick);
+    }
+
 }

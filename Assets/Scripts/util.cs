@@ -12,4 +12,26 @@ public static class util
         randv = new Vector3((float)rand.NextDouble(), (float)rand.NextDouble(), 0);
         return randv;
     }
+
+    // public static bool initSongComponent(Component ownComponent, System.Type type){
+    //     // System.Type type = ownComponent.GetType();
+    //     if (ownComponent == null){
+    //         ownComponent = GameObject.Find("SongSource").GetComponent(type);
+    //     }if (ownComponent == null){
+    //         ownComponent = GameObject.FindGameObjectWithTag("SongSource").GetComponent(type);
+    //     }if (ownComponent == null){
+    //         foreach (GameObject item in GameObject.FindObjectsOfType<GameObject>())
+    //         {
+    //             if(item.GetComponent(type) != null){
+    //                 ownComponent = item.GetComponent(type);
+    //                 return true;
+    //             }
+    //         }
+    //     }
+    //     if (ownComponent != null){
+    //         return true;
+    //     }else{
+    //         return false;
+    //     }
+    // }
 }

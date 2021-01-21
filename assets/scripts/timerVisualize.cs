@@ -21,9 +21,12 @@ public class timerVisualize : MonoBehaviour
             timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
         }
         if (songLoader == null){
-            song = new Song("eighth","1 1 111 1111 11 ");
-        }else{
-            song = songLoader.song;
+            songLoader = (songLoader)GameObject.Find("SongSource").GetComponent(typeof(songLoader));
+            if (songLoader != null){
+                song = songLoader.song;
+            }else{
+                song = new Song("eighth","1 1 111 1111 11 ");
+            }
         }
         newVector.x = this.transform.position.x;
         nextNoteVal = song.notes[nextNoteIdx].tick;

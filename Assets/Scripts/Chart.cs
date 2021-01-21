@@ -15,7 +15,10 @@ public class Chart : MonoBehaviour
     public Material quarterMaterial;
     public Material eighthMaterial;
     public Material sixteenthMaterial;
+    private const int LOADEDBARS = 2;
 
+    private Note nextN;
+    private int nextNIndex;
     
     // Start is called before the first frame update
     void Start()
@@ -41,7 +44,13 @@ public class Chart : MonoBehaviour
         }
         sixteenthMaterial = (sixteenthMaterial == null? (Material)Resources.Load("Green",typeof(Material)) : sixteenthMaterial);
 
-        spawnNoteBlocks();
+        nextNIndex = 0;
+        nextN = song.notes[nextNIndex++];
+
+        //optimization: only fill out first four bars
+        spawnNoteBlocks(0);
+        spawnNoteBlocks(32);
+
     }
 
     // Update is called once per frame
@@ -53,30 +62,42 @@ public class Chart : MonoBehaviour
             //every bar is 1 unit of scroll
             //1 beat = 0.25 unit, one 16th i.e. tick = 0.0625 unit
         }
+        //optimization: every 2 bars, spawn two more bars off the end, 2 bars in the future
+        if ((timer.sixteenth + 16) % 32 == 0){
+            spawnNoteBlocks(timer.sixteenth + 2*16);
+        }
     }
 
-    void spawnNoteBlocks(){
+    //spawns LOADEDBARS # of bars of notes starting at the given tick
+    // assumes notes are in ascending order of tick value
+    void spawnNoteBlocks(int tick){
         Vector3 notePos;
-        float offset;
-        float toChartTop = this.transform.localScale.y /2;
+        float dist;
+        // float toChartTop = this.transform.localScale.y /2 + grid.GetTextureOffset("_MainTex").y;
+        float toChartTop = this.transform.localScale.y /2f;
         
         GameObject curr;
-        foreach (Note n in song.notes){
-            offset = -(n.tick*(toChartTop/16));
+        // foreach (Note n in song.notes){
+        while (nextN.tick < (tick + 16*(LOADEDBARS + 1)) && nextNIndex < song.notes.Count ){
+            dist = -( (nextN.tick-timer.sixteenth)*(toChartTop/16) );
+            print("nextN.tick: "+nextN.tick);
             // TODO can change x pos, and add types here
-            notePos = new Vector3(0, offset + toChartTop, -1) + this.transform.position;
+            notePos = new Vector3(0, dist + toChartTop, -1) + this.transform.position;
             // print("tick: "+n.tick);
             // TODO optimize by only creating this bar + next... put in Update()...
             curr = Instantiate(GameObject.Find("cone"), notePos, rot);
             curr.transform.parent = songTop.transform;
-            if (n.isQuarter()){
+            if (nextN.isQuarter()){
                 curr.GetComponent<Renderer>().material = quarterMaterial;
-            }else if(n.isEighth()){
+            }else if(nextN.isEighth()){
                 curr.GetComponent<MeshRenderer>().material = eighthMaterial;
-            }else if(n.isSixteenth()){
+            }else if(nextN.isSixteenth()){
                 curr.GetComponent<Renderer>().material = sixteenthMaterial;
             }
+            nextN = song.notes[nextNIndex++];
         }
+        print("END CHUNK: currently tick "+timer.sixteenth);
+        return;
     }
 
     void scrollAll(float y){

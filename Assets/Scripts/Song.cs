@@ -15,7 +15,7 @@ public enum BeatSize{
 public class Song {
     public string songName;
     public List<Note> notes = new List<Note>() ;
-    const int frontPadding = 16;
+    const int FRONTPADDING = 16;
     // creates a song with a list of notes with any characters/spaces, indicating either
     //  "whole", "half", "quarter", "eighth" or "sixteenth" notes/rests respectively.
     public Song(string fromType, string rawSong){
@@ -27,7 +27,7 @@ public class Song {
         Debug.Log("Unknown type in Song(fromType) '"+fromType+"', using 16ths.");
         }
 
-        int index = 0+frontPadding;
+        int index = 0+FRONTPADDING;
         foreach (char c in rawSong)
         {
             // TODO change "any character" to match different types of notes
@@ -36,12 +36,13 @@ public class Song {
             }
             index += (int)bSize;
         }
+        this.sortByTick();
     }
     // creates a song with a list of notes with any characters/spaces, indicating their length
     // as a multiple of 16th notes/rests respectively.
     public Song(int beatLenSixteenths, string rawSong){
         
-        int index = 0+frontPadding;
+        int index = 0+FRONTPADDING;
         foreach (char c in rawSong)
         {
             // TODO change "any character" to match different types of notes
@@ -50,6 +51,12 @@ public class Song {
             }
             index += beatLenSixteenths;
         }
+        this.sortByTick();
+    }
+
+    // sorts this list by ascending order of its notes' tick value
+    public void sortByTick(){
+        this.notes.Sort(Note.CompareByTick);
     }
 
 }

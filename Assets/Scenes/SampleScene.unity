@@ -884,8 +884,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199521465}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -2.34, y: 1.911, z: 2}
-  m_LocalScale: {x: 9.700001, y: 5.0085764, z: 1}
+  m_LocalPosition: {x: -2.34, y: 3.232, z: 2}
+  m_LocalScale: {x: 9.700001, y: 2.364048, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -1450,7 +1450,7 @@ GameObject:
   - component: {fileID: 1632391004}
   m_Layer: 0
   m_Name: SongSource
-  m_TagString: Untagged
+  m_TagString: SongSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1591,7 +1591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a863baa50d060479a9cca2aca29d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawSong: '1   1   1   1   1 1 1 1   1     1 1 1 111 1 1 1 1     1 11 1     '
+  rawSong: 1   1   1   1   1 1 1 1   1     1 1 1 111 1 1 1 1     1 11 1     1 1 1
+    1 1 1 1 1 1111111111111111 111111111111111111111111111
   size: 1
   songPath: 
   song:
