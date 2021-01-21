@@ -43,6 +43,22 @@ public class songTimer : MonoBehaviour
     public void restart(){
         sixteenth = 0;
     }
+
+    public void correct(int ticks){
+        if (ticks < 0){
+            //TODO unset "playing", wait, set back
+        }else{
+            sixteenth += ticks;
+        }
+    }
+    public void correct(float seconds){
+        if (seconds < 0){
+            //TODO unset "playing", wait, set back
+        }
+        timer += seconds;
+        // it will update sixteenth next frame in Update()
+    }
+
 }
 
 // 120 BPM (beats per minute)

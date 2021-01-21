@@ -18,7 +18,7 @@ public class timerVisualize : MonoBehaviour
     {
 
         if (timer == null){
-            timer = (songTimer)GameObject.Find("songTimer").GetComponent(typeof(songTimer));
+            timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
         }
         if (songLoader == null){
             song = new Song("eighth","1 1 111 1111 11 ");

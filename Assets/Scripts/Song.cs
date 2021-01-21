@@ -15,7 +15,7 @@ public enum BeatSize{
 public class Song {
     public string songName;
     public List<Note> notes = new List<Note>() ;
-    const int frontPadding = 0;
+    const int frontPadding = 16;
     // creates a song with a list of notes with any characters/spaces, indicating either
     //  "whole", "half", "quarter", "eighth" or "sixteenth" notes/rests respectively.
     public Song(string fromType, string rawSong){

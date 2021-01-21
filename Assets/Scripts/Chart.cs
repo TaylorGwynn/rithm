@@ -26,7 +26,7 @@ public class Chart : MonoBehaviour
         grid = this.GetComponent<Renderer>().material;
         //TODO make songPlayer superclass?
         if (timer == null){
-            timer = (songTimer)GameObject.Find("songTimer").GetComponent(typeof(songTimer));
+            timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
         }
         if (songLoader == null){
             print("No song detected for "+this.gameObject.name+", using placeholder song.");
@@ -41,19 +41,21 @@ public class Chart : MonoBehaviour
         }
         sixteenthMaterial = (sixteenthMaterial == null? (Material)Resources.Load("Green",typeof(Material)) : sixteenthMaterial);
 
-        spawnNotes();
+        spawnNoteBlocks();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (timer.playing){
-            //TODO BPM math
-            scrollAll(Time.deltaTime/2);
+
+            scrollAll(Time.deltaTime*(timer.BPM/240f)); // BPM/240 =  BPM/ beats*4*60: bars per second
+            //every bar is 1 unit of scroll
+            //1 beat = 0.25 unit, one 16th i.e. tick = 0.0625 unit
         }
     }
 
-    void spawnNotes(){
+    void spawnNoteBlocks(){
         Vector3 notePos;
         float offset;
         float toChartTop = this.transform.localScale.y /2;
@@ -87,6 +89,15 @@ public class Chart : MonoBehaviour
     }
     void scrollNotes(float y){
         songTop.transform.Translate(0,y*this.transform.localScale.y/2,0);
+    }
+
+    public void correct(int ticks){
+        scrollAll(ticks*0.0625f); // 0.0625 = 1/16
+        timer.correct(ticks);
+    }
+    public void correct(float seconds){
+        scrollAll(seconds * (timer.BPM/240));// BPM/240: bars per second
+        timer.correct(seconds);
     }
 
 }
