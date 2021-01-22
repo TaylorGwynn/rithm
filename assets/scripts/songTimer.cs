@@ -5,7 +5,7 @@ using UnityEngine;
 public class songTimer : MonoBehaviour
 {
     public int sixteenth;
-    private float timer;
+    public float timer;
     public int BPM = 120;
     public bool playing = true;
     private float bpm_scale;
@@ -25,6 +25,7 @@ public class songTimer : MonoBehaviour
             
             sixteenth   = Mathf.FloorToInt( timer *4 / bpm_scale );
             // print(bar);
+            
         }
     }
     public int getEighth(){

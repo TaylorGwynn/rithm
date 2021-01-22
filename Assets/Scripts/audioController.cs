@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Plays and pauses the audio track
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,9 +21,11 @@ public class audioController : MonoBehaviour
 		// audioComp.enabled = false;
 		// waitPadding();
 
+		//TODO investigate how this goes when it's faster etc
 		delay_ms += 175; //pre-baked arbitrary number I tuned
-		audioComp.Pause();
+		// audioComp.Pause();
 		audioComp.PlayDelayed(240/timer.BPM +delay_ms*0.001f); // 240/BPM = seconds per bar, 0.001f: input to milliseconds
+		
 	}
 
 	// Update is called once per frame
@@ -27,7 +33,5 @@ public class audioController : MonoBehaviour
 	{
 		
 	}
-	// IEnumerator waitPadding(){
-	//     yield return new WaitForSecondsRealtime(2);
-	// }
+
 }

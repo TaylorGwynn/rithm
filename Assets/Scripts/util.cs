@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Utility functions
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

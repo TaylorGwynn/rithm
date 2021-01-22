@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+Testing class to visualize every note in a song
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
