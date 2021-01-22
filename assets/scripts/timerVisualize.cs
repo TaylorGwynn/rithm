@@ -1,9 +1,9 @@
-﻿using System.Collections;
+﻿//this class takes in a song via its passed songLoader or just raw note inputs
+// and displays the notes in time via some sort of motion
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//this class takes in a song via its passed songLoader or just raw note inputs
-// and displays the notes in time via some sort of motion
 public class timerVisualize : MonoBehaviour
 {
     public int note_type = 1;

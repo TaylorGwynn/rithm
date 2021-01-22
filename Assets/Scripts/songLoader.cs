@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Handles loading of the song file / raw song input, creates song
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

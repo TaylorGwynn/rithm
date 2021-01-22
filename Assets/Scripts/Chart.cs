@@ -1,5 +1,5 @@
 /*
-Generates notes and scrolls up, 
+Generates notes and scrolls up, controls gameplay (hitting notes, score etc)
 */
 using System.Collections;
 using System.Collections.Generic;

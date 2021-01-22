@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Class for tracking musical notes in the song: location, beat etc
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;

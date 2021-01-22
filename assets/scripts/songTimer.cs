@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*
+Tracks/controls current beat (in ticks = 16th notes) and time elapsed (in seconds). 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

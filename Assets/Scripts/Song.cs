@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Holds musical notes, parses inputs to create notes
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
