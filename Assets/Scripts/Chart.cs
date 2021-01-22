@@ -1,14 +1,16 @@
-﻿/*
+/*
 Generates notes and scrolls up, 
 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Chart : MonoBehaviour
 {
     public songTimer timer;
     public songLoader songLoader;
+    public Slider slider;
     protected Song song ;
     protected GameObject songTop;
     private Material grid;
@@ -20,15 +22,20 @@ public class Chart : MonoBehaviour
     public Material sixteenthMaterial;
     public NoteBlock noteBlockToSpawn;
     public int LOADEDBARS = 2;      // # of bars loaded ahead of time (offscreen)
-    public int TOOLATE = 4;         // # of ticks that a note's considered "too late" to intend being hit
-    public int OKWINDOW = 3;        // # of ticks that a note's considered "hit"
+    public int TOOLATE_TICKS = 4;         // # of ticks that a note's considered "too late" to intend being hit
+    private float toolate_seconds;
+    public int OKWINDOW_TICKS = 3;        // # of ticks that a note's considered "hit"
+    private float okwindow_seconds;
 
     private Note nextN;
     private int nextNIndex;
 
-    private List<NoteBlock> noteBlocks;
+    private List<NoteBlock> incomingNoteBlocks;
+    private List<NoteBlock> topNotes;
     private int topNote = 0;
 
+
+    public int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -54,9 +61,13 @@ public class Chart : MonoBehaviour
         }
         sixteenthMaterial = (sixteenthMaterial == null? (Material)Resources.Load("Green",typeof(Material)) : sixteenthMaterial);
 
-        noteBlocks = new List<NoteBlock>();
+        incomingNoteBlocks = new List<NoteBlock>();
+        topNotes = new List<NoteBlock>();
         nextNIndex = 0;
         nextN = song.notes[nextNIndex++];
+
+        toolate_seconds = TOOLATE_TICKS/4f/timer.BPM*60f;
+        okwindow_seconds = OKWINDOW_TICKS/4f/timer.BPM*60f;
 
         //optimization: only fill out first four bars
         spawnNoteBlocks(0);
@@ -78,8 +89,8 @@ public class Chart : MonoBehaviour
         }
 
         //TODO is this checking too often?
-        if(timer.sixteenth % 1 == 0 && topNote < noteBlocks.Count ){
-            // print("purging...?");
+        if(timer.sixteenth % 1 == 0 ){
+            grabTopNotes();
             purgeFinishedNotes();
         }
         
@@ -92,17 +103,20 @@ public class Chart : MonoBehaviour
         float dist;
         // float toChartTop = this.transform.localScale.y /2 + grid.GetTextureOffset("_MainTex").y;
         float toChartTop = this.transform.localScale.y /2f;
+        // float toChartSide = this.transform.localScale.x/2f;
+        float toChartSide = 0;
         
         NoteBlock curr;
-        // foreach (Note n in song.notes){
-        while (nextN.tick < (tick + 16*(LOADEDBARS + 1)) && nextNIndex < song.notes.Count ){
+        
+        while (nextN.tick <= (tick + 16*(LOADEDBARS + 1)) && nextNIndex <= song.notes.Count ){
             dist = -( (nextN.tick-timer.sixteenth)*(toChartTop/16) );
             // print("nextN.tick: "+nextN.tick);
             // TODO can change x pos, and add types here
-            notePos = new Vector3(0, dist + toChartTop, -1) + this.transform.position;
+            notePos = new Vector3(Random.Range(toChartSide, -toChartSide), dist + toChartTop, -1) + this.transform.position;
             // print("tick: "+n.tick);
-            // TODO optimize by only creating this bar + next... put in Update()...
+
             curr = Instantiate(noteBlockToSpawn, notePos, rot);
+            
             curr.transform.parent = songTop.transform;
             curr.note = nextN;
             if (nextN.isQuarter()){
@@ -115,8 +129,13 @@ public class Chart : MonoBehaviour
                 // curr.GetComponent<Renderer>().material = sixteenthMaterial;
                 curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.green);
             }
-            noteBlocks.Add(curr);
-            nextN = song.notes[nextNIndex++];
+            incomingNoteBlocks.Add(curr);
+            
+            if (nextNIndex < song.notes.Count){
+                nextN = song.notes[nextNIndex++];
+            }else{
+                nextNIndex++;
+            }
         }
         // print("END CHUNK: currently tick "+timer.sixteenth);
         return;
@@ -143,23 +162,50 @@ public class Chart : MonoBehaviour
         timer.correct(seconds);
     }
 
+    private int grabTopNotes(){
+        int grabbed = 0;
+        topNote = 0;
+        // does grabbing [0] and popping + pushing work?
+        while ( incomingNoteBlocks.Count > 0 && incomingNoteBlocks[0].getCurrentDifference() < OKWINDOW_TICKS/4f/timer.BPM*60f){
+            topNotes.Add(incomingNoteBlocks[0]);
+            // incomingNoteBlocks[0].GetComponent<Renderer>().material = null;
+            incomingNoteBlocks.RemoveAt(0);
+            grabbed++;
+        }
+        
+        return grabbed;
+    }
+
+    public bool noteIsHittable(int index){
+        return topNotes.Count > 0 && topNotes[index].getCurrentDifference() < okwindow_seconds;
+    }
+
+    public int hit(string key){
+        // different x positions to be implemented here, change index 0 to match hit note
+        if (noteIsHittable(index:0)){
+            topNotes[0].explode();
+            topNotes.RemoveAt(0);
+            score += 10;
+        }else{
+            score -= 10;
+        }
+            slider.value = score;
+        return -1;
+
+    }
+    
+
     //TODO!!!! don't scan through notes sequentially, here or above...
     private void purgeFinishedNotes(){
         // print("topnote: "+topNote+" currdiff "+noteBlocks[topNote].getCurrentDifference());
         // clear out the missed notes
-        print("-TOOLATE/4f/timer.BPM*60f: "+(-TOOLATE/4f/timer.BPM*60f));
-        while (noteBlocks[topNote].getCurrentDifference() < -TOOLATE/4f/timer.BPM*60f){
-            print("purged "+topNote);
-            noteBlocks[topNote++].die(miss:true);
+        // print("-TOOLATE/4f/timer.BPM*60f: "+(-TOOLATE/4f/timer.BPM*60f));
+        // print("topNotes[0].getCurrentDifference(): "+topNotes[0].getCurrentDifference());
+        while (topNotes.Count > 0 && topNotes[0].getCurrentDifference() < -toolate_seconds){
+            print("purged " + topNotes[0].note.tick);
+            topNotes[0].die(miss:true);
+            topNotes.RemoveAt(0);
         }
-        // clear out the hit notes
-        while (noteBlocks[0])
-    }
-    public int hit(string key){
-        if (noteBlocks[topNote].getCurrentDifference() < OKWINDOW/4f/timer.BPM*60f){
-            noteBlocks[topNote++].explode();
-            return 0;
-        }return -1;
-
+        return;
     }
 }

@@ -13,10 +13,18 @@ public class NoteBlock : MonoBehaviour
     public songTimer timer;
     public Chart chart;
     private float shouldBeAt;
+    private Vector3 popVector;
+    private Vector3 popRotVector;
+    public float MAXPUSH = 6;
+    public float MAXROT = 4;
     // Start is called before the first frame update
     void Start()
     {
         shouldBeAt = note.tick/4f/timer.BPM*60f; // 16ths /4 = beats, /BPM = minutes, *60 = seconds
+        // this.GetComponent<Rigidbody>().isKinematic = false;
+        this.GetComponent<Rigidbody>().useGravity = false;
+        popVector = new Vector3(Random.Range(-MAXPUSH/2,MAXPUSH/2), MAXPUSH*3, 5f);
+        popRotVector = new Vector3(Random.Range(-MAXROT,MAXROT), Random.Range(-MAXROT,MAXROT),Random.Range(-MAXROT,MAXROT));
     }
 
     // Update is called once per frame
@@ -30,8 +38,14 @@ public class NoteBlock : MonoBehaviour
     }
 
     public void explode(){
+        Rigidbody rb = this.GetComponent<Rigidbody>();
         this.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
-        print("BOOM!");
+        // print("BOOM!");
+        // rb.isKinematic = true;
+        rb.useGravity = true;
+        rb.constraints = RigidbodyConstraints.None;
+        rb.AddForce(popVector, ForceMode.Impulse);
+        rb.AddTorque(popRotVector, ForceMode.Impulse);
     }
 
     //removes the object, with a sad fadeout if it was a miss
