@@ -28,18 +28,18 @@ public class NoteBlock : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    // void Update()
+    // {
         
-    }
+    // }
 
     public float getCurrentDifference(){
         return shouldBeAt - timer.timer;
     }
 
-    public void explode(){
+    public void explode(string accuracy=null){
         Rigidbody rb = this.GetComponent<Rigidbody>();
-        this.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+        // this.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         // print("BOOM!");
         // rb.isKinematic = true;
         rb.useGravity = true;

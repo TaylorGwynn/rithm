@@ -14,7 +14,9 @@ public class Chart : MonoBehaviour
     protected Song song ;
     protected GameObject songTop;
     private Material grid;
-
+    public GameObject txt;
+    public TextMesh cheer;
+    // public PlayerInputController PlayerInputController;
     Quaternion rot = new Quaternion(0,0,0,0);
     Vector3 chartTop;
     // public Material quarterMaterial;
@@ -35,8 +37,10 @@ public class Chart : MonoBehaviour
 
     private List<NoteBlock> incomingNoteBlocks;
     private List<NoteBlock> topNotes;
-    private int topNote = 0;
+    // private int topNote = 0;
 
+    private float prevNoteX;
+    private int prevKeyX;
 
     public int score = 0;
 
@@ -178,7 +182,7 @@ public class Chart : MonoBehaviour
 
     private int grabTopNotes(){
         int grabbed = 0;
-        topNote = 0;
+        // topNote = 0;
         // does grabbing [0] and popping + pushing work?
         while ( incomingNoteBlocks.Count > 0 && incomingNoteBlocks[0].getCurrentDifference() < OKWINDOW_TICKS/4f/timer.BPM*60f){
             topNotes.Add(incomingNoteBlocks[0]);
@@ -194,19 +198,70 @@ public class Chart : MonoBehaviour
         return topNotes.Count > 0 && topNotes[index].getCurrentDifference() < okwindow_seconds;
     }
 
-    public int hit(string key){
+    public int hit(KeyCode key = KeyCode.Z){
+        float PERFECT_SECONDS = 0.07f;
+        const int POINTSPERFECT = 10;
+
+        float GOOD_SECONDS = 0.15f;
+        const int POINTSGOOD = 7;
+
+        const int POINTSOK = 5;
+
+        const int POINTSMISS = -2;
+
+        string accuracy;
+        int points;
         // different x positions to be implemented here, change index 0 to match hit note
         if (noteIsHittable(index:0)){
-            topNotes[0].explode();
+            NoteBlock curr = topNotes[0];
+            if(Mathf.Abs(curr.getCurrentDifference()) < PERFECT_SECONDS){
+                points = POINTSPERFECT;
+                accuracy = (curr.getCurrentDifference() < 0 ? "Great!-" : "-Great!");
+                
+            }else if(Mathf.Abs(curr.getCurrentDifference()) < GOOD_SECONDS){
+                points = POINTSGOOD;
+                accuracy = (curr.getCurrentDifference() < 0 ? "Good!-" : "-Good!");
+            }else {
+                points = POINTSOK;
+                accuracy = (curr.getCurrentDifference() < 0 ? "OK!-" : "-OK!");
+            }
+            if (judgeXpos(key, curr, this.GetComponent<PlayerInputController>())){
+                print("cool!");
+            }
+            curr.explode(accuracy);
             topNotes.RemoveAt(0);
-            score += 10;
+            score += points;
         }else{
-            score -= 10;
+            score += POINTSMISS;
+            accuracy = "Miss...";
         }
             slider.value = score;
+            txt.GetComponent<UnityEngine.UI.Text>().text = score.ToString() + " "+accuracy;
+            cheer.text = accuracy;
+            cheer.GetComponentInParent<Animator>().Play("bumpin");
         return -1;
 
     }
+    
+    private bool judgeXpos(KeyCode key, NoteBlock note, PlayerInputController pi){
+        bool cool = false;
+        int keyX = pi.keyToXpos(key);
+        float xpos = note.transform.position.x;
+
+        if(prevNoteX == xpos && prevKeyX == keyX){
+            cool = true;
+        }else if (prevNoteX < xpos && prevKeyX < keyX){
+            cool = true;
+        }else if (prevNoteX > xpos && prevKeyX > keyX){
+            cool = true;
+        }
+
+
+        prevNoteX = xpos;
+        prevKeyX = keyX;
+        return cool;
+    }
+
     
 
     //TODO!!!! don't scan through notes sequentially, here or above...
