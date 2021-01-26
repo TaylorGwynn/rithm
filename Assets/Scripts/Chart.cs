@@ -229,16 +229,29 @@ public class Chart : MonoBehaviour
                 print("cool!");
             }
             curr.explode(accuracy);
-            topNotes.RemoveAt(0);
             score += points;
         }else{
             score += POINTSMISS;
             accuracy = "Miss...";
         }
-            slider.value = score;
-            txt.GetComponent<UnityEngine.UI.Text>().text = score.ToString() + " "+accuracy;
-            cheer.text = accuracy;
-            cheer.GetComponentInParent<Animator>().Play("bumpin");
+        slider.value = score;
+        txt.GetComponent<UnityEngine.UI.Text>().text = score.ToString() + " "+accuracy;
+        cheer.text = accuracy;
+        // cheer.GetComponentInParent<Animator>().Play("bb");
+        switch (distToNextNote())
+        {   
+            case 1:
+                cheer.GetComponentInParent<Animator>().Play("bump16");
+                break;
+            case 2:
+                cheer.GetComponentInParent<Animator>().Play("bump8");
+                break;
+            case 4:
+            default:
+                cheer.GetComponentInParent<Animator>().Play("bump4");
+                break;
+        }
+        topNotes.RemoveAt(0);
         return -1;
 
     }
@@ -262,7 +275,14 @@ public class Chart : MonoBehaviour
         return cool;
     }
 
-    
+    public int distToNextNote(){
+        if (topNotes.Count >= 2){
+            return topNotes[1].note.tick - topNotes[0].note.tick;
+        }
+        else{
+            return 16;
+        }
+    }
 
     //TODO!!!! don't scan through notes sequentially, here or above...
     private void purgeFinishedNotes(){
