@@ -46,6 +46,8 @@ public class songTimer : MonoBehaviour
 
     public void restart(){
         sixteenth = 0;
+        playing = true;
+        return;
     }
 
     public void correct(int ticks){
@@ -61,6 +63,15 @@ public class songTimer : MonoBehaviour
         }
         timer += seconds;
         // it will update sixteenth next frame in Update()
+    }
+    public void pause(){
+        playing = false;
+        return;
+    }
+    IEnumerator pauseCoroutine3(){
+        playing = false;
+        yield return new WaitForSeconds(3);
+        playing = true;
     }
 
 }

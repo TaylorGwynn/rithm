@@ -18,6 +18,7 @@ public class Chart : MonoBehaviour
     public TextMesh cheer;
     // public PlayerInputController PlayerInputController;
     Quaternion rot = new Quaternion(0,0,0,0);
+    private Transform localTransformSansScale;
     Vector3 chartTop;
     // public Material quarterMaterial;
     // public Material eighthMaterial;
@@ -51,6 +52,7 @@ public class Chart : MonoBehaviour
         chartTop = new Vector3(po.x, po.y + this.transform.localScale.y /2);
         songTop = Instantiate(new GameObject(), chartTop, rot);
         grid = this.GetComponent<Renderer>().material;
+        grid.SetTextureOffset("_MainTex", new Vector2(0,0));
         //TODO make songPlayer superclass?
         if (timer == null){
             timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
@@ -107,6 +109,11 @@ public class Chart : MonoBehaviour
     // assumes notes are in ascending order of tick value
     void spawnNoteBlocks(int tick){
         Vector3 notePos;
+        
+        localTransformSansScale = new GameObject().transform;
+        localTransformSansScale.position = this.transform.position;
+        localTransformSansScale.rotation = this.transform.rotation;
+        
         float dist;
         // float toChartTop = this.transform.localScale.y /2 + grid.GetTextureOffset("_MainTex").y;
         float toChartTop = this.transform.localScale.y /2f;
@@ -123,7 +130,7 @@ public class Chart : MonoBehaviour
             notePos = new Vector3(nextN.xPos*toChartSide, dist + toChartTop, -1) + this.transform.position;
             // print("tick: "+n.tick);
 
-            curr = Instantiate(noteBlockToSpawn, notePos, rot);
+            curr = Instantiate(noteBlockToSpawn, notePos, rot, localTransformSansScale);
             
             curr.transform.parent = songTop.transform;
             curr.note = nextN;
@@ -134,6 +141,8 @@ public class Chart : MonoBehaviour
                 // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",new Color(255, 255, 255));
                 curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",quarterCol);
                 curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",quarterCol);
+                curr.GetComponent<Light>().color = quarterCol;
+                
             }else if(nextN.isEighth()){
                 // curr.GetComponent<MeshRenderer>().material = eighthMaterial;
                 // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.blue);
@@ -141,11 +150,13 @@ public class Chart : MonoBehaviour
                 // curr.transform.localScale  = new Vector3(2,2,2);
                 curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",eighthCol);
                 curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",eighthCol);
+                curr.GetComponent<Light>().color = eighthCol;
             }else if(nextN.isSixteenth()){
                 // curr.GetComponent<Renderer>().material = sixteenthMaterial;
                 // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.green);
                 curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",sixteenthCol);
                 curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",sixteenthCol);
+                curr.GetComponent<Light>().color = sixteenthCol;
             }
             incomingNoteBlocks.Add(curr);
             
@@ -165,10 +176,10 @@ public class Chart : MonoBehaviour
     }
     void scrollTex(float y){
         Vector2 currOffset = grid.GetTextureOffset("_MainTex");
-        grid.SetTextureOffset("_MainTex",currOffset + new Vector2(0,-y));
+        grid.SetTextureOffset("_MainTex",currOffset + new Vector2(0,y));
     }
     void scrollNotes(float y){
-        songTop.transform.Translate(0,y*this.transform.localScale.y/2,0);
+        songTop.transform.Translate(0,y*this.transform.localScale.y/2,0,localTransformSansScale);
     }
 
     public void correctScroll(int ticks){

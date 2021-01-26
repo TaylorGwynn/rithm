@@ -14,17 +14,17 @@ public class audioController : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		audioComp = GetComponent<AudioSource>();
-		if (timer == null){
-			timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
-		}
-		// audioComp.enabled = false;
-		// waitPadding();
+		// audioComp = GetComponent<AudioSource>();
+		// if (timer == null){
+		// 	timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
+		// }
+		// // audioComp.enabled = false;
+		// // waitPadding();
 
-		//TODO investigate how this goes when it's faster etc
-		delay_ms += 175; //pre-baked arbitrary number I tuned
-		// audioComp.Pause();
-		audioComp.PlayDelayed(240/timer.BPM +delay_ms*0.001f); // 240/BPM = seconds per bar, 0.001f: input to milliseconds
+		// //TODO investigate how this goes when it's faster etc
+		// delay_ms += 175; //pre-baked arbitrary number I tuned
+		// // audioComp.Pause();
+		// audioComp.PlayDelayed(240/timer.BPM +delay_ms*0.001f); // 240/BPM = seconds per bar, 0.001f: input to milliseconds
 		
 	}
 
@@ -34,4 +34,18 @@ public class audioController : MonoBehaviour
 		
 	}
 
+	public void begin(){
+		audioComp = GetComponent<AudioSource>();
+		if (timer == null){
+			timer = (songTimer)GameObject.Find("SongSource").GetComponent(typeof(songTimer));
+		}
+		// audioComp.enabled = false;
+		// waitPadding();
+
+		//TODO investigate how this goes when it's faster etc
+		// delay_ms += 175; //pre-baked arbitrary number I tuned
+		delay_ms += -200; //pre-baked arbitrary number I tuned
+		// audioComp.Pause();
+		audioComp.PlayDelayed(240/timer.BPM +delay_ms*0.001f); // 240/BPM = seconds per bar (for 1 bar intro delay), 0.001f: input to milliseconds
+	}
 }
