@@ -11,10 +11,35 @@ using System;
 public class Note
 {
 
+    public int tick;
+    public NoteType type;
     public enum NoteType{
         normal,
         holdStart,
         holdEnd
+    }
+    public float xPos;
+
+    public Note(int sixteenth)
+    {
+        this.tick = sixteenth;
+        this.type = NoteType.normal;
+    }
+
+    public Note(int sixteenth, string ntype = "normal", float xpos = 0f){
+        this.tick = sixteenth;
+        this.xPos = xpos;
+        try{
+            this.type = (NoteType)NoteType.Parse(typeof(NoteType),ntype,true);
+        }
+        catch (ArgumentException) {
+            Debug.Log(ntype + " is not a valid note type.");
+            throw;
+        }
+    }
+
+    public static int CompareByTick(Note note1, Note note2){
+        return note1.tick.CompareTo(note2.tick);
     }
     
     public int getBarNumber(){
@@ -47,29 +72,4 @@ public class Note
     public bool isSixteenth(){
         return true;
     }
-
-    public int tick;
-    public NoteType type;
-
-    public Note(int sixteenth)
-    {
-        this.tick = sixteenth;
-        this.type = NoteType.normal;
-    }
-
-    public Note(int sixteenth, string ntype){
-        this.tick = sixteenth;
-        try{
-            this.type = (NoteType)NoteType.Parse(typeof(NoteType),ntype,true);
-        }
-        catch (ArgumentException) {
-            Debug.Log(ntype + " is not a valid note type.");
-            throw;
-        }
-    }
-
-    public static int CompareByTick(Note note1, Note note2){
-        return note1.tick.CompareTo(note2.tick);
-    }
-
 }

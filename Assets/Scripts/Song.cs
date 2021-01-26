@@ -32,12 +32,16 @@ public class Song {
         }
 
         int index = 0+FRONTPADDING;
+        string type = "normal";
+        float xPos = 0;
         foreach (char c in rawSong)
         {
             // TODO change "any character" to match different types of notes
-            if(c != ' '){
-                this.notes.Add(new Note(index));
+            if (c > 48 && c < 57){
+                xPos = (c-48 - 5)/5;
+                this.notes.Add(new Note(index,type,xPos));
             }
+
             index += (int)bSize;
         }
         this.sortByTick();
@@ -47,12 +51,16 @@ public class Song {
     public Song(int beatLenSixteenths, string rawSong){
         
         int index = 0+FRONTPADDING;
+        string type = "normal";
+        float xPos = 0;
         foreach (char c in rawSong)
         {
             // TODO change "any character" to match different types of notes
-            if(c != ' '){
-                this.notes.Add(new Note(index));
+            if (c > 48 && c < 57){
+                xPos = (c-48 - 5)/5f;
+                this.notes.Add(new Note(index,type,xPos));
             }
+
             index += beatLenSixteenths;
         }
         this.sortByTick();

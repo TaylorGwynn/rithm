@@ -17,12 +17,15 @@ public class Chart : MonoBehaviour
 
     Quaternion rot = new Quaternion(0,0,0,0);
     Vector3 chartTop;
-    public Material quarterMaterial;
-    public Material eighthMaterial;
-    public Material sixteenthMaterial;
+    // public Material quarterMaterial;
+    // public Material eighthMaterial;
+    // public Material sixteenthMaterial;
+    public Color quarterCol = new Color(1, 0.2f, 0);
+    public Color eighthCol = new Color(0, 0.5f, 1);
+    public Color sixteenthCol = new Color(0, 0.7f, 0);
     public NoteBlock noteBlockToSpawn;
     public int LOADEDBARS = 2;      // # of bars loaded ahead of time (offscreen)
-    public int TOOLATE_TICKS = 4;         // # of ticks that a note's considered "too late" to intend being hit
+    public int TOOLATE_TICKS = 2;         // # of ticks that a note's considered "too late" to intend being hit
     private float toolate_seconds;
     public int OKWINDOW_TICKS = 3;        // # of ticks that a note's considered "hit"
     private float okwindow_seconds;
@@ -54,12 +57,12 @@ public class Chart : MonoBehaviour
         }else{
             song = songLoader.song;
         }
-        quarterMaterial = (quarterMaterial == null? (Material)Resources.Load("Assets/materials/Blue",typeof(Material)) : quarterMaterial);
-        eighthMaterial = (eighthMaterial == null? (Material)Resources.Load("Red",typeof(Material)) : eighthMaterial);
-        if (eighthMaterial == null){
-            eighthMaterial = (Material)Resources.Load("Red",typeof(Material));
-        }
-        sixteenthMaterial = (sixteenthMaterial == null? (Material)Resources.Load("Green",typeof(Material)) : sixteenthMaterial);
+        // quarterMaterial = (quarterMaterial == null? (Material)Resources.Load("Assets/materials/Blue",typeof(Material)) : quarterMaterial);
+        // eighthMaterial = (eighthMaterial == null? (Material)Resources.Load("Red",typeof(Material)) : eighthMaterial);
+        // if (eighthMaterial == null){
+        //     eighthMaterial = (Material)Resources.Load("Red",typeof(Material));
+        // }
+        // sixteenthMaterial = (sixteenthMaterial == null? (Material)Resources.Load("Green",typeof(Material)) : sixteenthMaterial);
 
         incomingNoteBlocks = new List<NoteBlock>();
         topNotes = new List<NoteBlock>();
@@ -103,8 +106,8 @@ public class Chart : MonoBehaviour
         float dist;
         // float toChartTop = this.transform.localScale.y /2 + grid.GetTextureOffset("_MainTex").y;
         float toChartTop = this.transform.localScale.y /2f;
-        // float toChartSide = this.transform.localScale.x/2f;
-        float toChartSide = 0;
+        float toChartSide = this.transform.localScale.x/2f;
+        // float toChartSide = 0;
         
         NoteBlock curr;
         
@@ -112,7 +115,8 @@ public class Chart : MonoBehaviour
             dist = -( (nextN.tick-timer.sixteenth)*(toChartTop/16) );
             // print("nextN.tick: "+nextN.tick);
             // TODO can change x pos, and add types here
-            notePos = new Vector3(Random.Range(toChartSide, -toChartSide), dist + toChartTop, -1) + this.transform.position;
+            // notePos = new Vector3(Random.Range(toChartSide, -toChartSide), dist + toChartTop, -1) + this.transform.position;
+            notePos = new Vector3(nextN.xPos*toChartSide, dist + toChartTop, -1) + this.transform.position;
             // print("tick: "+n.tick);
 
             curr = Instantiate(noteBlockToSpawn, notePos, rot);
@@ -121,13 +125,23 @@ public class Chart : MonoBehaviour
             curr.note = nextN;
             if (nextN.isQuarter()){
                 // curr.GetComponent<Renderer>().material = quarterMaterial;
-                curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.blue);
+                // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",new Color(1, 0.2f, 0));
+                // curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",new Color(1, 0.2f, 0));
+                // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",new Color(255, 255, 255));
+                curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",quarterCol);
+                curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",quarterCol);
             }else if(nextN.isEighth()){
                 // curr.GetComponent<MeshRenderer>().material = eighthMaterial;
-                curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.red);
+                // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.blue);
+                // curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",Color.blue);
+                // curr.transform.localScale  = new Vector3(2,2,2);
+                curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",eighthCol);
+                curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",eighthCol);
             }else if(nextN.isSixteenth()){
                 // curr.GetComponent<Renderer>().material = sixteenthMaterial;
-                curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.green);
+                // curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.green);
+                curr.GetComponent<Renderer>().material.SetColor("_EmissionColor",sixteenthCol);
+                curr.GetComponent<Renderer>().material.SetColor("_AlbedoColor",sixteenthCol);
             }
             incomingNoteBlocks.Add(curr);
             
@@ -202,9 +216,11 @@ public class Chart : MonoBehaviour
         // print("-TOOLATE/4f/timer.BPM*60f: "+(-TOOLATE/4f/timer.BPM*60f));
         // print("topNotes[0].getCurrentDifference(): "+topNotes[0].getCurrentDifference());
         while (topNotes.Count > 0 && topNotes[0].getCurrentDifference() < -toolate_seconds){
-            print("purged " + topNotes[0].note.tick);
+            // print("purged " + topNotes[0].note.tick);
             topNotes[0].die(miss:true);
             topNotes.RemoveAt(0);
+            score -= 10;
+            slider.value = score;
         }
         return;
     }
