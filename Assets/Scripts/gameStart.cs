@@ -21,9 +21,9 @@ public class gameStart : MonoBehaviour
 
     IEnumerator pauseForStartup()
     {
-        print("uh");
+        // print("uh");
         yield return new WaitForSeconds(0.1f);
-        print("WAITED");
+        // print("WAITED");
         ac.begin();
         st.restart();
         st.correct(-5);

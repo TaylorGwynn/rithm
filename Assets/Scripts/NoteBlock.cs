@@ -53,7 +53,8 @@ public class NoteBlock : MonoBehaviour
     //removes the object, with a sad fadeout if it was a miss
     public void die(bool miss){
         this.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-        // this.GetComponent<Renderer>().enabled = false;
+        this.GetComponent<Renderer>().enabled = false;
+        this.GetComponent<Light>().enabled = false;
         Destroy(this.gameObject,4);
     }
 

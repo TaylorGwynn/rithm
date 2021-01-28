@@ -17,6 +17,10 @@ public static class util
         return randv;
     }
 
+    public static Vector3 divideScales(Vector3 a, Vector3 b){
+        return new Vector3(a.x/b.x, a.y/b.y, a.z/b.z);
+    }
+
     // public static bool initSongComponent(Component ownComponent, System.Type type){
     //     // System.Type type = ownComponent.GetType();
     //     if (ownComponent == null){

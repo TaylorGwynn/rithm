@@ -17,7 +17,8 @@ public class Chart : MonoBehaviour
     public GameObject txt;
     public TextMesh cheer;
     // public PlayerInputController PlayerInputController;
-    Quaternion rot = new Quaternion(0,0,0,0);
+    Quaternion noRot = new Quaternion(0,0,0,0);
+    Vector3 oneScale = new Vector3(1,1,1);
     private Transform localTransformSansScale;
     Vector3 chartTop;
     // public Material quarterMaterial;
@@ -49,8 +50,10 @@ public class Chart : MonoBehaviour
     void Start()
     {
         Vector3 po = this.transform.position;
-        chartTop = new Vector3(po.x, po.y + this.transform.localScale.y /2);
-        songTop = Instantiate(new GameObject(), chartTop, rot);
+        chartTop = this.transform.rotation*(new Vector3(po.x, po.y + this.transform.localScale.y /2));//NEED TO FIX Y here is just "up", should be "up relative to chart board
+        // chartTop = new Vector3(po.x, po.y + this.transform.localScale.y /2);//NEED TO FIX Y here is just "up", should be "up relative to chart board
+        songTop = Instantiate(new GameObject(), chartTop, this.transform.rotation, this.transform);
+        songTop.transform.localScale = util.divideScales(oneScale,this.transform.localScale);
         grid = this.GetComponent<Renderer>().material;
         grid.SetTextureOffset("_MainTex", new Vector2(0,0));
         //TODO make songPlayer superclass?
@@ -130,9 +133,9 @@ public class Chart : MonoBehaviour
             notePos = new Vector3(nextN.xPos*toChartSide, dist + toChartTop, -1) + this.transform.position;
             // print("tick: "+n.tick);
 
-            curr = Instantiate(noteBlockToSpawn, notePos, rot, localTransformSansScale);
-            
+            curr = Instantiate(noteBlockToSpawn, notePos, noRot, this.transform);
             curr.transform.parent = songTop.transform;
+            curr.transform.localScale = oneScale;
             curr.note = nextN;
             if (nextN.isQuarter()){
                 // curr.GetComponent<Renderer>().material = quarterMaterial;
@@ -179,7 +182,8 @@ public class Chart : MonoBehaviour
         grid.SetTextureOffset("_MainTex",currOffset + new Vector2(0,y));
     }
     void scrollNotes(float y){
-        songTop.transform.Translate(0,y*this.transform.localScale.y/2,0,localTransformSansScale);
+        // songTop.transform.Translate(0,y*this.transform.localScale.y/2,0,localTransformSansScale);
+        songTop.transform.Translate(0,y*this.transform.localScale.y/2,0,this.transform);
     }
 
     public void correctScroll(int ticks){
@@ -262,7 +266,9 @@ public class Chart : MonoBehaviour
                 cheer.GetComponentInParent<Animator>().Play("bump4");
                 break;
         }
-        topNotes.RemoveAt(0);
+        if (topNotes.Count > 0){
+            topNotes.RemoveAt(0);
+        }
         return -1;
 
     }
