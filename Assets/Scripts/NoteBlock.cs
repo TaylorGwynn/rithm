@@ -46,12 +46,15 @@ public class NoteBlock : MonoBehaviour
         rb.constraints = RigidbodyConstraints.None;
         rb.AddForce(popVector, ForceMode.Impulse);
         rb.AddTorque(popRotVector, ForceMode.Impulse);
+        Destroy(this.gameObject,4);
+
     }
 
     //removes the object, with a sad fadeout if it was a miss
     public void die(bool miss){
         this.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-        this.GetComponent<Renderer>().enabled = false;
+        // this.GetComponent<Renderer>().enabled = false;
+        Destroy(this.gameObject,4);
     }
 
 }

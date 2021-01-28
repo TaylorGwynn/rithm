@@ -60,6 +60,7 @@ public class songTimer : MonoBehaviour
     public void correct(float seconds){
         if (seconds < 0){
             //TODO unset "playing", wait, set back
+            throw new System.NotImplementedException("need to add negative (pausing) correction to timer");
         }
         timer += seconds;
         // it will update sixteenth next frame in Update()
