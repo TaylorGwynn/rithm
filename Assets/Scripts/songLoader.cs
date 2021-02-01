@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class songLoader : MonoBehaviour
 {
+    public TextAsset songFile;
     public string rawSong = "1 1 111 ";
     public BeatSize size = BeatSize.quarter;
     public string songPath;
@@ -16,7 +17,11 @@ public class songLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.song = new Song((int)size, rawSong);
+        if (songFile == null){        
+            this.song = new Song((int)size, rawSong);
+        }else{
+            this.song = new Song((int)size, songFile);
+        }
     }
 
     // Update is called once per frame
