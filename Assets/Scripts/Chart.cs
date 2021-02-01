@@ -235,10 +235,10 @@ public class Chart : MonoBehaviour
                 
             }else if(Mathf.Abs(curr.getCurrentDifference()) < GOOD_SECONDS){
                 points = POINTSGOOD;
-                accuracy = (curr.getCurrentDifference() < 0 ? "Good!-" : "-Good!");
+                accuracy = (curr.getCurrentDifference() < 0 ? "Good-" : "-Good");
             }else {
                 points = POINTSOK;
-                accuracy = (curr.getCurrentDifference() < 0 ? "OK!-" : "-OK!");
+                accuracy = (curr.getCurrentDifference() < 0 ? "OK-" : "-OK");
             }
             if (judgeXpos(key, curr, this.GetComponent<PlayerInputController>())){
                 print("cool!");

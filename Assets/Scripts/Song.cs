@@ -66,6 +66,10 @@ public class Song {
         this.sortByTick();
     }
 
+    public Song(int beatLenSixteenths, TextAsset songFile){
+        // Song(beatLenSixteenths, songFile.text);
+    }
+
     // sorts this list by ascending order of its notes' tick value
     public void sortByTick(){
         this.notes.Sort(Note.CompareByTick);
