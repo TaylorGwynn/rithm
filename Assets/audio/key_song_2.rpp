@@ -1,0 +1,2180 @@
+<REAPER_PROJECT 0.1 "6.23/win64" 1614231964
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 1
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 35.85960413809067 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  <RECORD_CFG
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN key_song_2
+  RENDER_FMT 0 2 44100
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 0
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    ZXZhdxAAAA==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    FREQ 800 1600 1
+    BEATLEN 4
+    SAMPLES "" ""
+    PATTERN 2863311530 2863311529
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 28 0
+  SELECTION2 28 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 -1 -1 -1 0 0 0 -1 -1 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {6350DFAB-54DD-4798-A45F-0904F4D55B1D}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {2F167E3D-28D2-4CB6-A1DC-2AB40870DD1C}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {710D2769-F7EB-47E6-9EDF-5E9DF9697F0D}
+    NAME Helm
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.67365116373859 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 1 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {710D2769-F7EB-47E6-9EDF-5E9DF9697F0D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 1122 197 1219 847
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST3i: Helm (Matt Tytel) (mono)" helm64.vst3 0 "" 820595496{56535448656C6D68656C6D0000000000} ""
+        KEvpMO5e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAADLEAAAAQAAAP//EAA=
+        uxAAAAEAAABWc3RXAAAACAAAAAEAAAAAQ2NuSwAAEKNGQkNoAAAAAkhlbG0AAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQC3sNCiAgImxp
+        Y2Vuc2UiOiAiUGF0Y2ggKGMpIGJ5IC4gIFRoaXMgcGF0Y2ggaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5h
+        dGlvbmFsIExpY2Vuc2UuICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBsaWNlbnNlIGFsb25nIHdpdGggdGhpcyB3b3JrLiAgSWYgbm90LCBz
+        ZWUgPGh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8+LiIsDQogICJzeW50aF92ZXJzaW9uIjogIjAuOS4wIiwNCiAgInBhdGNoX25hbWUi
+        OiAiIiwNCiAgImZvbGRlcl9uYW1lIjogIiIsDQogICJhdXRob3IiOiAiIiwNCiAgInNldHRpbmdzIjogew0KICAgICJhbXBfYXR0YWNrIjogMCwNCiAgICAiYW1wX2Rl
+        Y2F5IjogMS41LA0KICAgICJhbXBfcmVsZWFzZSI6IDAuMjk5OTk5OTk5OTk5OTk5OTg4OSwNCiAgICAiYW1wX3N1c3RhaW4iOiAxLA0KICAgICJhcnBfZnJlcXVlbmN5
+        IjogMiwNCiAgICAiYXJwX2dhdGUiOiAwLjUsDQogICAgImFycF9vY3RhdmVzIjogMSwNCiAgICAiYXJwX29uIjogMCwNCiAgICAiYXJwX3BhdHRlcm4iOiAwLA0KICAg
+        ICJhcnBfc3luYyI6IDEsDQogICAgImFycF90ZW1wbyI6IDksDQogICAgImJlYXRzX3Blcl9taW51dGUiOiAyLA0KICAgICJjcm9zc19tb2R1bGF0aW9uIjogMCwNCiAg
+        ICAiY3V0b2ZmIjogODAsDQogICAgImRlbGF5X2RyeV93ZXQiOiAwLjUsDQogICAgImRlbGF5X2ZlZWRiYWNrIjogMC40MDAwMDAwMDAwMDAwMDAwMjIyLA0KICAgICJk
+        ZWxheV9mcmVxdWVuY3kiOiAyLA0KICAgICJkZWxheV9vbiI6IDAsDQogICAgImRlbGF5X3N5bmMiOiAxLA0KICAgICJkZWxheV90ZW1wbyI6IDksDQogICAgImRpc3Rv
+        cnRpb25fZHJpdmUiOiAwLA0KICAgICJkaXN0b3J0aW9uX21peCI6IDEsDQogICAgImRpc3RvcnRpb25fb24iOiAwLA0KICAgICJkaXN0b3J0aW9uX3R5cGUiOiAwLA0K
+        ICAgICJmaWxfYXR0YWNrIjogMCwNCiAgICAiZmlsX2RlY2F5IjogMS41LA0KICAgICJmaWxfZW52X2RlcHRoIjogMCwNCiAgICAiZmlsX3JlbGVhc2UiOiAxLjUsDQog
+        ICAgImZpbF9zdXN0YWluIjogMC41LA0KICAgICJmaWx0ZXJfYmxlbmQiOiAwLA0KICAgICJmaWx0ZXJfZHJpdmUiOiAwLA0KICAgICJmaWx0ZXJfb24iOiAwLA0KICAg
+        ICJmaWx0ZXJfc2hlbGYiOiAwLA0KICAgICJmaWx0ZXJfc3R5bGUiOiAwLA0KICAgICJmb3JtYW50X29uIjogMCwNCiAgICAiZm9ybWFudF94IjogMC41LA0KICAgICJm
+        b3JtYW50X3kiOiAwLjUsDQogICAgImtleXRyYWNrIjogMCwNCiAgICAibGVnYXRvIjogMCwNCiAgICAibW9kX2F0dGFjayI6IDAsDQogICAgIm1vZF9kZWNheSI6IDEu
+        NSwNCiAgICAibW9kX3JlbGVhc2UiOiAxLjUsDQogICAgIm1vZF9zdXN0YWluIjogMC41LA0KICAgICJtb25vX2xmb18xX2FtcGxpdHVkZSI6IDEsDQogICAgIm1vbm9f
+        bGZvXzFfZnJlcXVlbmN5IjogMSwNCiAgICAibW9ub19sZm9fMV9yZXRyaWdnZXIiOiAyLA0KICAgICJtb25vX2xmb18xX3N5bmMiOiAxLA0KICAgICJtb25vX2xmb18x
+        X3RlbXBvIjogNiwNCiAgICAibW9ub19sZm9fMV93YXZlZm9ybSI6IDAsDQogICAgIm1vbm9fbGZvXzJfYW1wbGl0dWRlIjogMSwNCiAgICAibW9ub19sZm9fMl9mcmVx
+        dWVuY3kiOiAxLA0KICAgICJtb25vX2xmb18yX3JldHJpZ2dlciI6IDIsDQogICAgIm1vbm9fbGZvXzJfc3luYyI6IDEsDQogICAgIm1vbm9fbGZvXzJfdGVtcG8iOiA3
+        LA0KICAgICJtb25vX2xmb18yX3dhdmVmb3JtIjogMCwNCiAgICAibm9pc2Vfdm9sdW1lIjogMCwNCiAgICAibnVtX3N0ZXBzIjogOCwNCiAgICAib3NjXzFfdHJhbnNw
+        b3NlIjogMCwNCiAgICAib3NjXzFfdHVuZSI6IDAsDQogICAgIm9zY18xX3VuaXNvbl9kZXR1bmUiOiAxMCwNCiAgICAib3NjXzFfdW5pc29uX3ZvaWNlcyI6IDEsDQog
+        ICAgIm9zY18xX3ZvbHVtZSI6IDAuNTQ3NzIyNTU3NDk5OTk5OTg0NjQsDQogICAgIm9zY18xX3dhdmVmb3JtIjogMCwNCiAgICAib3NjXzJfdHJhbnNwb3NlIjogMCwN
+        CiAgICAib3NjXzJfdHVuZSI6IDAsDQogICAgIm9zY18yX3VuaXNvbl9kZXR1bmUiOiAxMCwNCiAgICAib3NjXzJfdW5pc29uX3ZvaWNlcyI6IDEsDQogICAgIm9zY18y
+        X3ZvbHVtZSI6IDAuNTQ3NzIyNTU3NDk5OTk5OTg0NjQsDQogICAgIm9zY18yX3dhdmVmb3JtIjogMSwNCiAgICAib3NjX2ZlZWRiYWNrX2Ftb3VudCI6IDAsDQogICAg
+        Im9zY19mZWVkYmFja190cmFuc3Bvc2UiOiAwLA0KICAgICJvc2NfZmVlZGJhY2tfdHVuZSI6IDAsDQogICAgInBpdGNoX2JlbmRfcmFuZ2UiOiAyLA0KICAgICJwb2x5
+        X2xmb19hbXBsaXR1ZGUiOiAxLA0KICAgICJwb2x5X2xmb19mcmVxdWVuY3kiOiAxLA0KICAgICJwb2x5X2xmb19zeW5jIjogMSwNCiAgICAicG9seV9sZm9fdGVtcG8i
+        OiA3LA0KICAgICJwb2x5X2xmb193YXZlZm9ybSI6IDAsDQogICAgInBvbHlwaG9ueSI6IDQsDQogICAgInBvcnRhbWVudG8iOiAtNywNCiAgICAicG9ydGFtZW50b190
+        eXBlIjogMCwNCiAgICAicmVzb25hbmNlIjogMC41LA0KICAgICJyZXZlcmJfZGFtcGluZyI6IDAuNSwNCiAgICAicmV2ZXJiX2RyeV93ZXQiOiAwLjUsDQogICAgInJl
+        dmVyYl9mZWVkYmFjayI6IDAuOTAwMDAwMDAwMDAwMDAwMDIyMiwNCiAgICAicmV2ZXJiX29uIjogMCwNCiAgICAic3RlcF9mcmVxdWVuY3kiOiAyLA0KICAgICJzdGVw
+        X3NlcV8wMCI6IDAsDQogICAgInN0ZXBfc2VxXzAxIjogMCwNCiAgICAic3RlcF9zZXFfMDIiOiAwLA0KICAgICJzdGVwX3NlcV8wMyI6IDAsDQogICAgInN0ZXBfc2Vx
+        XzA0IjogMCwNCiAgICAic3RlcF9zZXFfMDUiOiAwLA0KICAgICJzdGVwX3NlcV8wNiI6IDAsDQogICAgInN0ZXBfc2VxXzA3IjogMCwNCiAgICAic3RlcF9zZXFfMDgi
+        OiAwLA0KICAgICJzdGVwX3NlcV8wOSI6IDAsDQogICAgInN0ZXBfc2VxXzEwIjogMCwNCiAgICAic3RlcF9zZXFfMTEiOiAwLA0KICAgICJzdGVwX3NlcV8xMiI6IDAs
+        DQogICAgInN0ZXBfc2VxXzEzIjogMCwNCiAgICAic3RlcF9zZXFfMTQiOiAwLA0KICAgICJzdGVwX3NlcV8xNSI6IDAsDQogICAgInN0ZXBfc2VxXzE2IjogMCwNCiAg
+        ICAic3RlcF9zZXFfMTciOiAwLA0KICAgICJzdGVwX3NlcV8xOCI6IDAsDQogICAgInN0ZXBfc2VxXzE5IjogMCwNCiAgICAic3RlcF9zZXFfMjAiOiAwLA0KICAgICJz
+        dGVwX3NlcV8yMSI6IDAsDQogICAgInN0ZXBfc2VxXzIyIjogMCwNCiAgICAic3RlcF9zZXFfMjMiOiAwLA0KICAgICJzdGVwX3NlcV8yNCI6IDAsDQogICAgInN0ZXBf
+        c2VxXzI1IjogMCwNCiAgICAic3RlcF9zZXFfMjYiOiAwLA0KICAgICJzdGVwX3NlcV8yNyI6IDAsDQogICAgInN0ZXBfc2VxXzI4IjogMCwNCiAgICAic3RlcF9zZXFf
+        MjkiOiAwLA0KICAgICJzdGVwX3NlcV8zMCI6IDAsDQogICAgInN0ZXBfc2VxXzMxIjogMCwNCiAgICAic3RlcF9zZXF1ZW5jZXJfcmV0cmlnZ2VyIjogMiwNCiAgICAi
+        c3RlcF9zZXF1ZW5jZXJfc3luYyI6IDEsDQogICAgInN0ZXBfc2VxdWVuY2VyX3RlbXBvIjogNywNCiAgICAic3RlcF9zbW9vdGhpbmciOiAwLA0KICAgICJzdHV0dGVy
+        X2ZyZXF1ZW5jeSI6IDMsDQogICAgInN0dXR0ZXJfb24iOiAwLA0KICAgICJzdHV0dGVyX3Jlc2FtcGxlX2ZyZXF1ZW5jeSI6IDEsDQogICAgInN0dXR0ZXJfcmVzYW1w
+        bGVfc3luYyI6IDEsDQogICAgInN0dXR0ZXJfcmVzYW1wbGVfdGVtcG8iOiA2LA0KICAgICJzdHV0dGVyX3NvZnRuZXNzIjogMC4yMDAwMDAwMDAwMDAwMDAwMTExLA0K
+        ICAgICJzdHV0dGVyX3N5bmMiOiAxLA0KICAgICJzdHV0dGVyX3RlbXBvIjogOCwNCiAgICAic3ViX29jdGF2ZSI6IDAsDQogICAgInN1Yl9zaHVmZmxlIjogMCwNCiAg
+        ICAic3ViX3ZvbHVtZSI6IDAsDQogICAgInN1Yl93YXZlZm9ybSI6IDIsDQogICAgInVuaXNvbl8xX2hhcm1vbml6ZSI6IDAsDQogICAgInVuaXNvbl8yX2hhcm1vbml6
+        ZSI6IDAsDQogICAgInZlbG9jaXR5X3RyYWNrIjogMCwNCiAgICAidm9sdW1lIjogMC43MDcxMDY4MDAwMDAwMDAwMzUzMSwNCiAgICAibW9kdWxhdGlvbnMiOiBbXQ0K
+        ICB9DQp9AAAAAAAAAAAASlVDRVByaXZhdGVEYXRhAAEBQnlwYXNzAAEBAwAdAAAAAAAAAEpVQ0VQcml2YXRlRGF0YQAAAAAAAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {BA5C55D4-06DB-4BA8-B474-EC92FFCBC5B7}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {071E2993-0F1D-4D72-8499-7FD90929BCFD}
+      IID 1
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {09DBC19C-E092-44BF-93E7-840EB189C32E}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {4E0F9302-AB28-47EC-A57F-1A73E2FCC74B}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {2829538E-0E5C-4568-95EB-9B7519373F81}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 31
+        VELLANE -1 41 0
+        CFGEDITVIEW -412.435632 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 4
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D4A31610-4E96-4859-AECF-22FD1834279D}
+      IID 7
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EBC805F1-5B97-4474-AA39-A3E74838BDC7}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {A7E64BB2-D854-40D7-85D4-54337BABD727}
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 51 7c
+        E 240 80 51 00
+        E 0 90 54 7c
+        E 240 80 54 00
+        E 0 90 56 7c
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {1120B93F-4265-43C8-A821-37ABAEDB5BB7}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 88
+        VELLANE -1 41 0
+        CFGEDITVIEW 5435.646259 0.161046 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 6
+      SNAPOFFS 0
+      LENGTH 6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E7CCF8D0-3E0F-43E9-B1CC-57E714951C04}
+      IID 40
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {798C9A68-D50C-44CF-B8EB-4C891B184609}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {DBC87974-9168-4B6F-8A27-C61A382ADE86}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {5C8F8E5A-C92A-439D-9A1B-DE294DBC916D}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 310
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 12
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BB926ECF-5435-4798-9763-FF630ADC245B}
+      IID 44
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {32C39C99-CE5D-4D05-BB12-D5602628010C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {B9EE11D3-8D91-44F3-9929-CBF53246F9FF}
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 51 7c
+        E 240 80 51 00
+        E 0 90 54 7c
+        E 240 80 54 00
+        E 0 90 56 7c
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {02B93C3D-4D02-4039-A89E-DF078AED53EB}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 314
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.161046 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 14
+      SNAPOFFS 0
+      LENGTH 6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3AF6437A-F0E6-44B1-B2F4-6487D836867A}
+      IID 45
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4D05F0FD-02EE-4112-A705-53DAD783AA17}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {A1864382-AA45-45C8-A9E9-38E8BDD0372D}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {C9A0B2EA-9593-4E57-B1E7-3E1F32A03D65}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 315
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 20
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E530D978-B650-4880-8FD9-F888D3FEF532}
+      IID 7
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {08B46E65-5C56-477E-AED0-7D19D2E13B23}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {339E2AF4-25F1-4F29-B581-C8012686FE74}
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 51 7c
+        E 240 80 51 00
+        E 0 90 54 7c
+        E 240 80 54 00
+        E 0 90 56 7c
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {1120B93F-4265-43C8-A821-37ABAEDB5BB7}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 88
+        VELLANE -1 41 0
+        CFGEDITVIEW 5435.646259 0.161046 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 22
+      SNAPOFFS 0
+      LENGTH 6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CF58435E-8E67-4E12-B739-9F9DD721E498}
+      IID 8
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E1EC0D35-4BC0-4903-BB73-EDA409926FC1}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {2BFFD7A1-CD65-45A8-A8D7-98927455C507}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {B2C4A50C-D5E2-47BB-A50E-25477185EF21}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 89
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 28
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A7AA187F-2B89-4BE1-8EC2-24C892299D12}
+      IID 13
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {56585930-26CD-4AE6-8BB9-C8254938BB61}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {CCA57CAA-496E-4939-B2B7-51F20E77DADA}
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 51 7c
+        E 240 80 51 00
+        E 0 90 54 7c
+        E 240 80 54 00
+        E 0 90 56 7c
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {43536434-F75E-4D2B-AC65-4E339AD14252}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 112
+        VELLANE -1 41 0
+        CFGEDITVIEW -327.448551 0.120927 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 30
+      SNAPOFFS 0
+      LENGTH 6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {514C6949-7628-456B-BB30-CBF28DB7298D}
+      IID 14
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6D204B6A-7842-4B49-A3A7-628D8FF1F7D6}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {30BBAEFF-D5B3-44C1-ABCC-469CDC27B260}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {2DDDB4E0-ECA7-4FBF-9975-3FD3FFC0C952}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 113
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 36
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E6964D09-5010-4DB6-845A-F7B7EA148FCE}
+      IID 20
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {19491A4B-920C-4C41-8BF8-A3A6D4C52EC4}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {FCF3AFE2-2718-4A8B-861D-C994B75D1CC6}
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 51 7c
+        E 240 80 51 00
+        E 0 90 54 7c
+        E 240 80 54 00
+        E 0 90 56 7c
+        E 240 80 56 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        e 0 90 51 7f
+        e 240 80 51 00
+        E 0 90 54 7f
+        E 240 80 54 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {FDAF49F4-A41C-484B-BCC3-60FCBD18E6D5}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 171
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.161046 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 38
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AA3B72F5-C12A-47D4-A093-DBA23196B85E}
+      IID 21
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A0FD7D3A-EDDD-4777-8EC1-5254DF2E9151}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {F87BF0DE-36FB-412B-88FF-BF56F20DCEC7}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {69ADA501-956C-4A78-BDB3-925A8CD9A033}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 172
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 40
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {750F2C48-AF4A-4CCD-AE9A-ABFDFF48D391}
+      IID 53
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A2E10C46-EFEC-4150-8AE3-51E744342A6A}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {DD15019A-5874-4452-AB15-D5AA039C97FE}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 240 90 53 7c
+        E 240 80 53 00
+        e 0 90 4f 7c
+        e 240 80 4f 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {D65F8813-5FF3-4D4F-B96F-24B4C0AE9D1A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 323
+        VELLANE -1 41 0
+        CFGEDITVIEW -741.612564 0.054575 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 44
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5ED35C96-6D47-4E38-BB39-F1D1E7EEF66A}
+      IID 58
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {72235CD5-E31B-4530-A85D-39A846C45EA6}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {09654340-ECDA-4A4A-A28F-52300C2A31B5}
+        E 0 90 4a 7f
+        E 240 80 4a 00
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 90 51 7c
+        E 240 80 51 00
+        E 0 90 4e 7f
+        E 240 80 4e 00
+        E 0 90 4a 7f
+        E 240 80 4a 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 240 90 51 7c
+        E 240 80 51 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 56 7c
+        E 240 80 56 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        e 0 90 4e 7f
+        e 240 80 4e 00
+        E 0 90 51 7f
+        E 240 80 51 00
+        E 0 90 56 6d
+        E 240 80 56 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {6EFAD2F9-5315-409C-9AAF-E956282EF9BB}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 328
+        VELLANE -1 41 0
+        CFGEDITVIEW -414.86903 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 46
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {55597C40-431B-4FF3-BD12-7A6B7D211372}
+      IID 59
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {603A981E-53C4-45CB-AC1D-F2E37608B970}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {2E0ADCF1-7CE4-49D2-A54D-EECB423304BE}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 240 90 53 7c
+        E 240 80 53 00
+        e 0 90 4f 7c
+        e 240 80 4f 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {B5FDE37B-D97A-4D67-A593-D92AB6EB8B6E}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 329
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.054575 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 48
+      SNAPOFFS 0
+      LENGTH 6
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {35BE876B-AB0E-4CE4-8A4E-A6DD1D2BF739}
+      IID 55
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C49FDB75-8065-494C-BA37-BD1A89635F7C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {0232DE1D-219D-40D7-8133-5BE3CF665A16}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        e 0 90 4f 7f
+        e 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {412D4105-980F-4451-992D-1D9255CB7591}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 325
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.054575 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 54
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4C9BD0C4-C3E7-470E-B3D9-4BA036E85636}
+      IID 52
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C43A7E41-7847-4A32-814B-38DF7BFF4C03}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {A0B29ECE-474B-45B3-AF75-2A730C14099B}
+        E 0 90 4c 7f
+        E 240 80 4c 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4e 7c
+        E 240 80 4e 00
+        E 0 90 4f 7f
+        E 240 80 4f 00
+        E 0 90 53 7f
+        E 240 80 53 00
+        E 0 90 58 6d
+        E 240 80 58 00
+        E 0 90 4f 7c
+        E 240 80 4f 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 5b 7c
+        E 240 80 5b 00
+        E 0 90 58 7c
+        E 240 80 58 00
+        E 0 90 53 7c
+        E 240 80 53 00
+        e 0 90 4f 7c
+        e 240 80 4f 00
+        E 0 90 4c 7c
+        E 240 80 4c 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {B160F8C6-3EA2-4438-90E0-0A71808E8D40}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 322
+        VELLANE -1 41 0
+        CFGEDITVIEW 0 0.096794 25 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {23CBFEBE-357C-4380-B645-8B5289478FFE}
+    NAME Helm
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.73679674640694 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 1 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {23CBFEBE-357C-4380-B645-8B5289478FFE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 1122 197 1219 847
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST3i: Helm (Matt Tytel) (mono)" helm64.vst3 0 "" 820595496{56535448656C6D68656C6D0000000000} ""
+        KEvpMO5e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAAAdEQAAAQAAAP//EAA=
+        DREAAAEAAABWc3RXAAAACAAAAAEAAAAAQ2NuSwAAEPVGQkNoAAAAAkhlbG0AAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQXXsNCiAgImxp
+        Y2Vuc2UiOiAiUGF0Y2ggKGMpIGJ5IC4gIFRoaXMgcGF0Y2ggaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5h
+        dGlvbmFsIExpY2Vuc2UuICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBsaWNlbnNlIGFsb25nIHdpdGggdGhpcyB3b3JrLiAgSWYgbm90LCBz
+        ZWUgPGh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8+LiIsDQogICJzeW50aF92ZXJzaW9uIjogIjAuOS4wIiwNCiAgInBhdGNoX25hbWUi
+        OiAiIiwNCiAgImZvbGRlcl9uYW1lIjogIiIsDQogICJhdXRob3IiOiAiIiwNCiAgInNldHRpbmdzIjogew0KICAgICJhbXBfYXR0YWNrIjogMC4xMTc2NDcwNTg4MjM1
+        Mjk0MTAxMywNCiAgICAiYW1wX2RlY2F5IjogMi42NDcwNTg4MjM1Mjk0MTE2ODYzLA0KICAgICJhbXBfcmVsZWFzZSI6IDAuMzUyOTQxMTc2NDcwNTg4MjU4MTUsDQog
+        ICAgImFtcF9zdXN0YWluIjogMC42MTc2NDcwNTg4MjM1Mjk0Mzc4OSwNCiAgICAiYXJwX2ZyZXF1ZW5jeSI6IDIsDQogICAgImFycF9nYXRlIjogMC41LA0KICAgICJh
+        cnBfb2N0YXZlcyI6IDEsDQogICAgImFycF9vbiI6IDAsDQogICAgImFycF9wYXR0ZXJuIjogMCwNCiAgICAiYXJwX3N5bmMiOiAxLA0KICAgICJhcnBfdGVtcG8iOiA5
+        LA0KICAgICJiZWF0c19wZXJfbWludXRlIjogMiwNCiAgICAiY3Jvc3NfbW9kdWxhdGlvbiI6IDAuMDI5OTk5OTk5OTk5OTk5OTk4ODksDQogICAgImN1dG9mZiI6IDgw
+        LA0KICAgICJkZWxheV9kcnlfd2V0IjogMC41LA0KICAgICJkZWxheV9mZWVkYmFjayI6IDAuNDAwMDAwMDAwMDAwMDAwMDIyMiwNCiAgICAiZGVsYXlfZnJlcXVlbmN5
+        IjogMiwNCiAgICAiZGVsYXlfb24iOiAwLA0KICAgICJkZWxheV9zeW5jIjogMSwNCiAgICAiZGVsYXlfdGVtcG8iOiA5LA0KICAgICJkaXN0b3J0aW9uX2RyaXZlIjog
+        MCwNCiAgICAiZGlzdG9ydGlvbl9taXgiOiAxLA0KICAgICJkaXN0b3J0aW9uX29uIjogMCwNCiAgICAiZGlzdG9ydGlvbl90eXBlIjogMCwNCiAgICAiZmlsX2F0dGFj
+        ayI6IDAsDQogICAgImZpbF9kZWNheSI6IDEuNSwNCiAgICAiZmlsX2Vudl9kZXB0aCI6IDAsDQogICAgImZpbF9yZWxlYXNlIjogMS41LA0KICAgICJmaWxfc3VzdGFp
+        biI6IDAuNSwNCiAgICAiZmlsdGVyX2JsZW5kIjogMCwNCiAgICAiZmlsdGVyX2RyaXZlIjogMCwNCiAgICAiZmlsdGVyX29uIjogMCwNCiAgICAiZmlsdGVyX3NoZWxm
+        IjogMCwNCiAgICAiZmlsdGVyX3N0eWxlIjogMCwNCiAgICAiZm9ybWFudF9vbiI6IDAsDQogICAgImZvcm1hbnRfeCI6IDAuNSwNCiAgICAiZm9ybWFudF95IjogMC41
+        LA0KICAgICJrZXl0cmFjayI6IDAsDQogICAgImxlZ2F0byI6IDAsDQogICAgIm1vZF9hdHRhY2siOiAwLA0KICAgICJtb2RfZGVjYXkiOiAxLjUsDQogICAgIm1vZF9y
+        ZWxlYXNlIjogMS41LA0KICAgICJtb2Rfc3VzdGFpbiI6IDAuNSwNCiAgICAibW9ub19sZm9fMV9hbXBsaXR1ZGUiOiAxLA0KICAgICJtb25vX2xmb18xX2ZyZXF1ZW5j
+        eSI6IDEsDQogICAgIm1vbm9fbGZvXzFfcmV0cmlnZ2VyIjogMiwNCiAgICAibW9ub19sZm9fMV9zeW5jIjogMSwNCiAgICAibW9ub19sZm9fMV90ZW1wbyI6IDYsDQog
+        ICAgIm1vbm9fbGZvXzFfd2F2ZWZvcm0iOiAwLA0KICAgICJtb25vX2xmb18yX2FtcGxpdHVkZSI6IDEsDQogICAgIm1vbm9fbGZvXzJfZnJlcXVlbmN5IjogMSwNCiAg
+        ICAibW9ub19sZm9fMl9yZXRyaWdnZXIiOiAyLA0KICAgICJtb25vX2xmb18yX3N5bmMiOiAxLA0KICAgICJtb25vX2xmb18yX3RlbXBvIjogNywNCiAgICAibW9ub19s
+        Zm9fMl93YXZlZm9ybSI6IDAsDQogICAgIm5vaXNlX3ZvbHVtZSI6IDAsDQogICAgIm51bV9zdGVwcyI6IDgsDQogICAgIm9zY18xX3RyYW5zcG9zZSI6IDAsDQogICAg
+        Im9zY18xX3R1bmUiOiAwLA0KICAgICJvc2NfMV91bmlzb25fZGV0dW5lIjogMTAsDQogICAgIm9zY18xX3VuaXNvbl92b2ljZXMiOiAxLA0KICAgICJvc2NfMV92b2x1
+        bWUiOiAwLjU0NzcyMjU1NzQ5OTk5OTk4NDY0LA0KICAgICJvc2NfMV93YXZlZm9ybSI6IDIsDQogICAgIm9zY18yX3RyYW5zcG9zZSI6IDAsDQogICAgIm9zY18yX3R1
+        bmUiOiAwLA0KICAgICJvc2NfMl91bmlzb25fZGV0dW5lIjogMTAsDQogICAgIm9zY18yX3VuaXNvbl92b2ljZXMiOiAxLA0KICAgICJvc2NfMl92b2x1bWUiOiAwLjU0
+        NzcyMjU1NzQ5OTk5OTk4NDY0LA0KICAgICJvc2NfMl93YXZlZm9ybSI6IDEsDQogICAgIm9zY19mZWVkYmFja19hbW91bnQiOiAwLA0KICAgICJvc2NfZmVlZGJhY2tf
+        dHJhbnNwb3NlIjogMCwNCiAgICAib3NjX2ZlZWRiYWNrX3R1bmUiOiAwLA0KICAgICJwaXRjaF9iZW5kX3JhbmdlIjogMiwNCiAgICAicG9seV9sZm9fYW1wbGl0dWRl
+        IjogMSwNCiAgICAicG9seV9sZm9fZnJlcXVlbmN5IjogMSwNCiAgICAicG9seV9sZm9fc3luYyI6IDEsDQogICAgInBvbHlfbGZvX3RlbXBvIjogNywNCiAgICAicG9s
+        eV9sZm9fd2F2ZWZvcm0iOiAwLA0KICAgICJwb2x5cGhvbnkiOiA0LA0KICAgICJwb3J0YW1lbnRvIjogLTcsDQogICAgInBvcnRhbWVudG9fdHlwZSI6IDAsDQogICAg
+        InJlc29uYW5jZSI6IDAuNSwNCiAgICAicmV2ZXJiX2RhbXBpbmciOiAwLjUsDQogICAgInJldmVyYl9kcnlfd2V0IjogMC41LA0KICAgICJyZXZlcmJfZmVlZGJhY2si
+        OiAwLjkwMDAwMDAwMDAwMDAwMDAyMjIsDQogICAgInJldmVyYl9vbiI6IDAsDQogICAgInN0ZXBfZnJlcXVlbmN5IjogMiwNCiAgICAic3RlcF9zZXFfMDAiOiAwLA0K
+        ICAgICJzdGVwX3NlcV8wMSI6IDAsDQogICAgInN0ZXBfc2VxXzAyIjogMCwNCiAgICAic3RlcF9zZXFfMDMiOiAwLA0KICAgICJzdGVwX3NlcV8wNCI6IDAsDQogICAg
+        InN0ZXBfc2VxXzA1IjogMCwNCiAgICAic3RlcF9zZXFfMDYiOiAwLA0KICAgICJzdGVwX3NlcV8wNyI6IDAsDQogICAgInN0ZXBfc2VxXzA4IjogMCwNCiAgICAic3Rl
+        cF9zZXFfMDkiOiAwLA0KICAgICJzdGVwX3NlcV8xMCI6IDAsDQogICAgInN0ZXBfc2VxXzExIjogMCwNCiAgICAic3RlcF9zZXFfMTIiOiAwLA0KICAgICJzdGVwX3Nl
+        cV8xMyI6IDAsDQogICAgInN0ZXBfc2VxXzE0IjogMCwNCiAgICAic3RlcF9zZXFfMTUiOiAwLA0KICAgICJzdGVwX3NlcV8xNiI6IDAsDQogICAgInN0ZXBfc2VxXzE3
+        IjogMCwNCiAgICAic3RlcF9zZXFfMTgiOiAwLA0KICAgICJzdGVwX3NlcV8xOSI6IDAsDQogICAgInN0ZXBfc2VxXzIwIjogMCwNCiAgICAic3RlcF9zZXFfMjEiOiAw
+        LA0KICAgICJzdGVwX3NlcV8yMiI6IDAsDQogICAgInN0ZXBfc2VxXzIzIjogMCwNCiAgICAic3RlcF9zZXFfMjQiOiAwLA0KICAgICJzdGVwX3NlcV8yNSI6IDAsDQog
+        ICAgInN0ZXBfc2VxXzI2IjogMCwNCiAgICAic3RlcF9zZXFfMjciOiAwLA0KICAgICJzdGVwX3NlcV8yOCI6IDAsDQogICAgInN0ZXBfc2VxXzI5IjogMCwNCiAgICAi
+        c3RlcF9zZXFfMzAiOiAwLA0KICAgICJzdGVwX3NlcV8zMSI6IDAsDQogICAgInN0ZXBfc2VxdWVuY2VyX3JldHJpZ2dlciI6IDIsDQogICAgInN0ZXBfc2VxdWVuY2Vy
+        X3N5bmMiOiAxLA0KICAgICJzdGVwX3NlcXVlbmNlcl90ZW1wbyI6IDcsDQogICAgInN0ZXBfc21vb3RoaW5nIjogMCwNCiAgICAic3R1dHRlcl9mcmVxdWVuY3kiOiAz
+        LA0KICAgICJzdHV0dGVyX29uIjogMCwNCiAgICAic3R1dHRlcl9yZXNhbXBsZV9mcmVxdWVuY3kiOiAxLA0KICAgICJzdHV0dGVyX3Jlc2FtcGxlX3N5bmMiOiAxLA0K
+        ICAgICJzdHV0dGVyX3Jlc2FtcGxlX3RlbXBvIjogNiwNCiAgICAic3R1dHRlcl9zb2Z0bmVzcyI6IDAuMjAwMDAwMDAwMDAwMDAwMDExMSwNCiAgICAic3R1dHRlcl9z
+        eW5jIjogMSwNCiAgICAic3R1dHRlcl90ZW1wbyI6IDgsDQogICAgInN1Yl9vY3RhdmUiOiAwLA0KICAgICJzdWJfc2h1ZmZsZSI6IDAsDQogICAgInN1Yl92b2x1bWUi
+        OiAwLA0KICAgICJzdWJfd2F2ZWZvcm0iOiAyLA0KICAgICJ1bmlzb25fMV9oYXJtb25pemUiOiAwLA0KICAgICJ1bmlzb25fMl9oYXJtb25pemUiOiAwLA0KICAgICJ2
+        ZWxvY2l0eV90cmFjayI6IDAsDQogICAgInZvbHVtZSI6IDAuNTQxODQyMjA3NzkyMjA3ODE5NDksDQogICAgIm1vZHVsYXRpb25zIjogW10NCiAgfQ0KfQAAAAAAAAAA
+        AEpVQ0VQcml2YXRlRGF0YQABAUJ5cGFzcwABAQMAHQAAAAAAAABKVUNFUHJpdmF0ZURhdGEAAAAAAAAAAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1B8A5A26-F848-4FDB-880A-65D87CA6B667}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 7.5
+      SNAPOFFS 0
+      LENGTH 48
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4269BDE4-B5D4-49DB-8967-C200BB73E0FF}
+      IID 5
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 7.5 15
+      PLAYRATE 1 1 -12 -1 0 0.0025
+      CHANMODE 0
+      GUID {458AF87C-2D97-4825-B2C7-512692433832}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {FD8F5F8A-A307-4C08-B97C-B558E4247F64}
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 0 90 32 7e
+        E 240 80 32 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 0 90 32 7e
+        E 240 80 32 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 240 90 32 7e
+        E 240 80 32 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 240 90 34 7e
+        E 240 80 34 00
+        E 240 90 32 7e
+        E 240 80 32 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 240 90 32 7e
+        E 240 80 32 00
+        E 240 90 30 7e
+        E 240 80 30 00
+        E 0 90 2f 7e
+        E 240 80 2f 00
+        E 0 90 30 7e
+        E 240 80 30 00
+        E 0 90 2f 7e
+        E 240 80 2f 00
+        E 0 90 30 7e
+        E 240 80 30 00
+        E 240 90 2f 7e
+        E 240 80 2f 00
+        E 0 90 30 7e
+        E 240 80 30 00
+        E 240 90 30 7e
+        E 240 80 30 00
+        E 240 90 2f 7e
+        E 240 80 2f 00
+        E 0 90 30 7e
+        E 240 80 30 00
+        E 240 90 2f 7e
+        E 240 80 2f 00
+        E 240 90 32 7e
+        E 240 80 32 00
+        E 0 90 30 7e
+        E 240 80 30 00
+        E 0 90 32 7e
+        E 240 80 32 00
+        E 0 90 30 7e
+        E 240 80 30 00
+        E 0 90 32 7e
+        E 240 80 32 00
+        E 240 90 30 7e
+        E 240 80 30 00
+        E 0 90 32 7e
+        E 240 80 32 00
+        E 240 90 32 7e
+        E 240 80 32 00
+        E 240 90 30 7e
+        E 240 80 30 00
+        E 0 90 32 7e
+        E 240 80 32 00
+        E 240 90 33 7e
+        E 240 80 33 00
+        E 240 90 34 7e
+        E 240 80 34 00
+        E 0 90 28 7e
+        E 240 80 28 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 0 90 28 7e
+        E 240 80 28 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 240 90 34 7e
+        E 240 80 34 00
+        E 0 90 34 7e
+        E 240 80 34 00
+        E 960 90 34 7e
+        E 480 80 34 00
+        e 0 90 32 7e
+        e 480 80 32 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {DC9CD2D9-18A4-4471-9113-8E65FDAEAA7E}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 86
+        VELLANE -1 41 0
+        CFGEDITVIEW 23115.980983 0.057122 54 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 258 224 1485 996 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {37A3AE23-312E-4517-B7F1-4E2788DB61A1}
+    NAME Helm
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.75333899751391 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 1 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {37A3AE23-312E-4517-B7F1-4E2788DB61A1}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 1122 197 1219 847
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST3i: Helm (Matt Tytel) (mono)" helm64.vst3 0 "" 820595496{56535448656C6D68656C6D0000000000} ""
+        KEvpMO5e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAADLEAAAAQAAAP//EAA=
+        uxAAAAEAAABWc3RXAAAACAAAAAEAAAAAQ2NuSwAAEKNGQkNoAAAAAkhlbG0AAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQC3sNCiAgImxp
+        Y2Vuc2UiOiAiUGF0Y2ggKGMpIGJ5IC4gIFRoaXMgcGF0Y2ggaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5h
+        dGlvbmFsIExpY2Vuc2UuICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBsaWNlbnNlIGFsb25nIHdpdGggdGhpcyB3b3JrLiAgSWYgbm90LCBz
+        ZWUgPGh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8+LiIsDQogICJzeW50aF92ZXJzaW9uIjogIjAuOS4wIiwNCiAgInBhdGNoX25hbWUi
+        OiAiIiwNCiAgImZvbGRlcl9uYW1lIjogIiIsDQogICJhdXRob3IiOiAiIiwNCiAgInNldHRpbmdzIjogew0KICAgICJhbXBfYXR0YWNrIjogMCwNCiAgICAiYW1wX2Rl
+        Y2F5IjogMS41LA0KICAgICJhbXBfcmVsZWFzZSI6IDAuMjk5OTk5OTk5OTk5OTk5OTg4OSwNCiAgICAiYW1wX3N1c3RhaW4iOiAxLA0KICAgICJhcnBfZnJlcXVlbmN5
+        IjogMiwNCiAgICAiYXJwX2dhdGUiOiAwLjUsDQogICAgImFycF9vY3RhdmVzIjogMSwNCiAgICAiYXJwX29uIjogMSwNCiAgICAiYXJwX3BhdHRlcm4iOiAwLA0KICAg
+        ICJhcnBfc3luYyI6IDEsDQogICAgImFycF90ZW1wbyI6IDksDQogICAgImJlYXRzX3Blcl9taW51dGUiOiAyLA0KICAgICJjcm9zc19tb2R1bGF0aW9uIjogMCwNCiAg
+        ICAiY3V0b2ZmIjogODAsDQogICAgImRlbGF5X2RyeV93ZXQiOiAwLjUsDQogICAgImRlbGF5X2ZlZWRiYWNrIjogMC40MDAwMDAwMDAwMDAwMDAwMjIyLA0KICAgICJk
+        ZWxheV9mcmVxdWVuY3kiOiAyLA0KICAgICJkZWxheV9vbiI6IDAsDQogICAgImRlbGF5X3N5bmMiOiAxLA0KICAgICJkZWxheV90ZW1wbyI6IDksDQogICAgImRpc3Rv
+        cnRpb25fZHJpdmUiOiAwLA0KICAgICJkaXN0b3J0aW9uX21peCI6IDEsDQogICAgImRpc3RvcnRpb25fb24iOiAwLA0KICAgICJkaXN0b3J0aW9uX3R5cGUiOiAwLA0K
+        ICAgICJmaWxfYXR0YWNrIjogMCwNCiAgICAiZmlsX2RlY2F5IjogMS41LA0KICAgICJmaWxfZW52X2RlcHRoIjogMCwNCiAgICAiZmlsX3JlbGVhc2UiOiAxLjUsDQog
+        ICAgImZpbF9zdXN0YWluIjogMC41LA0KICAgICJmaWx0ZXJfYmxlbmQiOiAwLA0KICAgICJmaWx0ZXJfZHJpdmUiOiAwLA0KICAgICJmaWx0ZXJfb24iOiAwLA0KICAg
+        ICJmaWx0ZXJfc2hlbGYiOiAwLA0KICAgICJmaWx0ZXJfc3R5bGUiOiAwLA0KICAgICJmb3JtYW50X29uIjogMCwNCiAgICAiZm9ybWFudF94IjogMC41LA0KICAgICJm
+        b3JtYW50X3kiOiAwLjUsDQogICAgImtleXRyYWNrIjogMCwNCiAgICAibGVnYXRvIjogMCwNCiAgICAibW9kX2F0dGFjayI6IDAsDQogICAgIm1vZF9kZWNheSI6IDEu
+        NSwNCiAgICAibW9kX3JlbGVhc2UiOiAxLjUsDQogICAgIm1vZF9zdXN0YWluIjogMC41LA0KICAgICJtb25vX2xmb18xX2FtcGxpdHVkZSI6IDEsDQogICAgIm1vbm9f
+        bGZvXzFfZnJlcXVlbmN5IjogMSwNCiAgICAibW9ub19sZm9fMV9yZXRyaWdnZXIiOiAyLA0KICAgICJtb25vX2xmb18xX3N5bmMiOiAxLA0KICAgICJtb25vX2xmb18x
+        X3RlbXBvIjogNiwNCiAgICAibW9ub19sZm9fMV93YXZlZm9ybSI6IDAsDQogICAgIm1vbm9fbGZvXzJfYW1wbGl0dWRlIjogMSwNCiAgICAibW9ub19sZm9fMl9mcmVx
+        dWVuY3kiOiAxLA0KICAgICJtb25vX2xmb18yX3JldHJpZ2dlciI6IDIsDQogICAgIm1vbm9fbGZvXzJfc3luYyI6IDEsDQogICAgIm1vbm9fbGZvXzJfdGVtcG8iOiA3
+        LA0KICAgICJtb25vX2xmb18yX3dhdmVmb3JtIjogMCwNCiAgICAibm9pc2Vfdm9sdW1lIjogMCwNCiAgICAibnVtX3N0ZXBzIjogOCwNCiAgICAib3NjXzFfdHJhbnNw
+        b3NlIjogMCwNCiAgICAib3NjXzFfdHVuZSI6IDAsDQogICAgIm9zY18xX3VuaXNvbl9kZXR1bmUiOiAxMCwNCiAgICAib3NjXzFfdW5pc29uX3ZvaWNlcyI6IDEsDQog
+        ICAgIm9zY18xX3ZvbHVtZSI6IDAuNTQ3NzIyNTU3NDk5OTk5OTg0NjQsDQogICAgIm9zY18xX3dhdmVmb3JtIjogMiwNCiAgICAib3NjXzJfdHJhbnNwb3NlIjogMCwN
+        CiAgICAib3NjXzJfdHVuZSI6IDAsDQogICAgIm9zY18yX3VuaXNvbl9kZXR1bmUiOiAxMCwNCiAgICAib3NjXzJfdW5pc29uX3ZvaWNlcyI6IDEsDQogICAgIm9zY18y
+        X3ZvbHVtZSI6IDAuNTQ3NzIyNTU3NDk5OTk5OTg0NjQsDQogICAgIm9zY18yX3dhdmVmb3JtIjogMSwNCiAgICAib3NjX2ZlZWRiYWNrX2Ftb3VudCI6IDAsDQogICAg
+        Im9zY19mZWVkYmFja190cmFuc3Bvc2UiOiAwLA0KICAgICJvc2NfZmVlZGJhY2tfdHVuZSI6IDAsDQogICAgInBpdGNoX2JlbmRfcmFuZ2UiOiAyLA0KICAgICJwb2x5
+        X2xmb19hbXBsaXR1ZGUiOiAxLA0KICAgICJwb2x5X2xmb19mcmVxdWVuY3kiOiAxLA0KICAgICJwb2x5X2xmb19zeW5jIjogMSwNCiAgICAicG9seV9sZm9fdGVtcG8i
+        OiA3LA0KICAgICJwb2x5X2xmb193YXZlZm9ybSI6IDAsDQogICAgInBvbHlwaG9ueSI6IDQsDQogICAgInBvcnRhbWVudG8iOiAtNywNCiAgICAicG9ydGFtZW50b190
+        eXBlIjogMCwNCiAgICAicmVzb25hbmNlIjogMC41LA0KICAgICJyZXZlcmJfZGFtcGluZyI6IDAuNSwNCiAgICAicmV2ZXJiX2RyeV93ZXQiOiAwLjUsDQogICAgInJl
+        dmVyYl9mZWVkYmFjayI6IDAuOTAwMDAwMDAwMDAwMDAwMDIyMiwNCiAgICAicmV2ZXJiX29uIjogMCwNCiAgICAic3RlcF9mcmVxdWVuY3kiOiAyLA0KICAgICJzdGVw
+        X3NlcV8wMCI6IDAsDQogICAgInN0ZXBfc2VxXzAxIjogMCwNCiAgICAic3RlcF9zZXFfMDIiOiAwLA0KICAgICJzdGVwX3NlcV8wMyI6IDAsDQogICAgInN0ZXBfc2Vx
+        XzA0IjogMCwNCiAgICAic3RlcF9zZXFfMDUiOiAwLA0KICAgICJzdGVwX3NlcV8wNiI6IDAsDQogICAgInN0ZXBfc2VxXzA3IjogMCwNCiAgICAic3RlcF9zZXFfMDgi
+        OiAwLA0KICAgICJzdGVwX3NlcV8wOSI6IDAsDQogICAgInN0ZXBfc2VxXzEwIjogMCwNCiAgICAic3RlcF9zZXFfMTEiOiAwLA0KICAgICJzdGVwX3NlcV8xMiI6IDAs
+        DQogICAgInN0ZXBfc2VxXzEzIjogMCwNCiAgICAic3RlcF9zZXFfMTQiOiAwLA0KICAgICJzdGVwX3NlcV8xNSI6IDAsDQogICAgInN0ZXBfc2VxXzE2IjogMCwNCiAg
+        ICAic3RlcF9zZXFfMTciOiAwLA0KICAgICJzdGVwX3NlcV8xOCI6IDAsDQogICAgInN0ZXBfc2VxXzE5IjogMCwNCiAgICAic3RlcF9zZXFfMjAiOiAwLA0KICAgICJz
+        dGVwX3NlcV8yMSI6IDAsDQogICAgInN0ZXBfc2VxXzIyIjogMCwNCiAgICAic3RlcF9zZXFfMjMiOiAwLA0KICAgICJzdGVwX3NlcV8yNCI6IDAsDQogICAgInN0ZXBf
+        c2VxXzI1IjogMCwNCiAgICAic3RlcF9zZXFfMjYiOiAwLA0KICAgICJzdGVwX3NlcV8yNyI6IDAsDQogICAgInN0ZXBfc2VxXzI4IjogMCwNCiAgICAic3RlcF9zZXFf
+        MjkiOiAwLA0KICAgICJzdGVwX3NlcV8zMCI6IDAsDQogICAgInN0ZXBfc2VxXzMxIjogMCwNCiAgICAic3RlcF9zZXF1ZW5jZXJfcmV0cmlnZ2VyIjogMiwNCiAgICAi
+        c3RlcF9zZXF1ZW5jZXJfc3luYyI6IDEsDQogICAgInN0ZXBfc2VxdWVuY2VyX3RlbXBvIjogNywNCiAgICAic3RlcF9zbW9vdGhpbmciOiAwLA0KICAgICJzdHV0dGVy
+        X2ZyZXF1ZW5jeSI6IDMsDQogICAgInN0dXR0ZXJfb24iOiAwLA0KICAgICJzdHV0dGVyX3Jlc2FtcGxlX2ZyZXF1ZW5jeSI6IDEsDQogICAgInN0dXR0ZXJfcmVzYW1w
+        bGVfc3luYyI6IDEsDQogICAgInN0dXR0ZXJfcmVzYW1wbGVfdGVtcG8iOiA2LA0KICAgICJzdHV0dGVyX3NvZnRuZXNzIjogMC4yMDAwMDAwMDAwMDAwMDAwMTExLA0K
+        ICAgICJzdHV0dGVyX3N5bmMiOiAxLA0KICAgICJzdHV0dGVyX3RlbXBvIjogOCwNCiAgICAic3ViX29jdGF2ZSI6IDAsDQogICAgInN1Yl9zaHVmZmxlIjogMCwNCiAg
+        ICAic3ViX3ZvbHVtZSI6IDAsDQogICAgInN1Yl93YXZlZm9ybSI6IDIsDQogICAgInVuaXNvbl8xX2hhcm1vbml6ZSI6IDAsDQogICAgInVuaXNvbl8yX2hhcm1vbml6
+        ZSI6IDAsDQogICAgInZlbG9jaXR5X3RyYWNrIjogMCwNCiAgICAidm9sdW1lIjogMC40MjI0NTMyNDY3NTMyNDY2OTE3MiwNCiAgICAibW9kdWxhdGlvbnMiOiBbXQ0K
+        ICB9DQp9AAAAAAAAAAAASlVDRVByaXZhdGVEYXRhAAEBQnlwYXNzAAEBAwAdAAAAAAAAAEpVQ0VQcml2YXRlRGF0YQAAAAAAAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {75708F64-1A31-4E11-9BF8-8B2EF10F5E07}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 24
+      SNAPOFFS 0
+      LENGTH 16
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7FC5F176-DC79-4C9F-B2B9-606C11ACCBDC}
+      IID 10
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {671F6C13-5DC3-4263-A265-040EB9C37BA0}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {FB33371F-2C94-405E-8303-8B618C3DAD06}
+        E 0 90 4c 75
+        E 0 90 4f 7f
+        E 0 90 47 7f
+        E 2880 80 4c 00
+        E 0 80 4f 00
+        E 0 80 47 00
+        E 0 90 4e 7f
+        E 0 90 4c 7f
+        E 960 80 4e 00
+        E 0 80 4c 00
+        E 0 90 4c 7f
+        E 0 90 48 7f
+        E 0 90 4f 7f
+        E 2880 80 48 00
+        E 0 80 4f 00
+        E 0 90 4a 7f
+        E 960 80 4c 00
+        E 0 80 4a 00
+        E 0 90 4a 7f
+        E 0 90 45 7f
+        E 0 90 4e 7f
+        E 1920 80 4a 00
+        E 0 80 45 00
+        E 0 80 4e 00
+        E 0 90 45 7f
+        E 0 90 4c 7f
+        E 960 80 45 00
+        E 0 80 4c 00
+        E 0 90 42 7f
+        E 0 90 4a 7f
+        E 960 80 42 00
+        E 0 80 4a 00
+        e 0 90 4f 7f
+        E 0 90 43 7f
+        E 0 90 4c 7f
+        e 3840 80 4f 00
+        E 0 80 43 00
+        E 0 80 4c 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {6E80C9E9-FBFD-44CD-858D-B25327B19788}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 109
+        VELLANE -1 41 0
+        CFGEDITVIEW -1252.889458 0.032209 44 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+    <ITEM
+      POSITION 40
+      SNAPOFFS 0
+      LENGTH 16
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {99592C40-7866-4BC6-9FC3-06A7483A48BB}
+      IID 50
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7D0C12E6-93F0-4B7E-BDC9-0A5AD44F55EC}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {00E54FAA-F45F-4458-82B2-9362D36D2D68}
+        E 0 90 4c 75
+        E 0 90 4f 7f
+        E 2880 80 4c 00
+        E 0 80 4f 00
+        E 0 90 4e 7f
+        E 960 80 4e 00
+        E 0 90 48 7f
+        E 0 90 4f 7f
+        E 2880 80 48 00
+        E 0 80 4f 00
+        E 0 90 4e 7f
+        E 960 80 4e 00
+        E 0 90 4a 7f
+        E 0 90 4e 7f
+        E 1920 80 4a 00
+        E 0 80 4e 00
+        E 0 90 4f 7f
+        E 960 80 4f 00
+        E 0 90 4e 7f
+        E 960 80 4e 00
+        E 0 90 4f 7f
+        e 0 90 4c 7f
+        E 1920 80 4f 00
+        e 0 80 4c 00
+        E 0 90 4c 7f
+        E 1920 80 4c 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {BF1F02B2-D141-4DCD-8E45-BE84C8F28315}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 320
+        VELLANE -1 41 0
+        CFGEDITVIEW -1634.762765 0.024185 44 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1083 233 2310 1005 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {20C3C79D-6DE8-48B2-950F-FED2C45DA1B1}
+    NAME Helm
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 1 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {20C3C79D-6DE8-48B2-950F-FED2C45DA1B1}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 1122 197 1219 847
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST3i: Helm (Matt Tytel) (mono)" helm64.vst3 0 "" 820595496{56535448656C6D68656C6D0000000000} ""
+        KEvpMO5e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAAD1EAAAAQAAAP//EAA=
+        5RAAAAEAAABWc3RXAAAACAAAAAEAAAAAQ2NuSwAAEM1GQkNoAAAAAkhlbG0AAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQNXsNCiAgImxp
+        Y2Vuc2UiOiAiUGF0Y2ggKGMpIGJ5IC4gIFRoaXMgcGF0Y2ggaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5h
+        dGlvbmFsIExpY2Vuc2UuICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBsaWNlbnNlIGFsb25nIHdpdGggdGhpcyB3b3JrLiAgSWYgbm90LCBz
+        ZWUgPGh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8+LiIsDQogICJzeW50aF92ZXJzaW9uIjogIjAuOS4wIiwNCiAgInBhdGNoX25hbWUi
+        OiAiIiwNCiAgImZvbGRlcl9uYW1lIjogIiIsDQogICJhdXRob3IiOiAiIiwNCiAgInNldHRpbmdzIjogew0KICAgICJhbXBfYXR0YWNrIjogMCwNCiAgICAiYW1wX2Rl
+        Y2F5IjogMS41LA0KICAgICJhbXBfcmVsZWFzZSI6IDAuMjk5OTk5OTk5OTk5OTk5OTg4OSwNCiAgICAiYW1wX3N1c3RhaW4iOiAxLA0KICAgICJhcnBfZnJlcXVlbmN5
+        IjogMiwNCiAgICAiYXJwX2dhdGUiOiAwLjUsDQogICAgImFycF9vY3RhdmVzIjogMSwNCiAgICAiYXJwX29uIjogMCwNCiAgICAiYXJwX3BhdHRlcm4iOiAwLA0KICAg
+        ICJhcnBfc3luYyI6IDEsDQogICAgImFycF90ZW1wbyI6IDksDQogICAgImJlYXRzX3Blcl9taW51dGUiOiAyLA0KICAgICJjcm9zc19tb2R1bGF0aW9uIjogMC4yMDM5
+        OTk5OTk5OTk5OTk5ODY5LA0KICAgICJjdXRvZmYiOiA4MCwNCiAgICAiZGVsYXlfZHJ5X3dldCI6IDAuNSwNCiAgICAiZGVsYXlfZmVlZGJhY2siOiAwLjQwMDAwMDAw
+        MDAwMDAwMDAyMjIsDQogICAgImRlbGF5X2ZyZXF1ZW5jeSI6IDIsDQogICAgImRlbGF5X29uIjogMCwNCiAgICAiZGVsYXlfc3luYyI6IDEsDQogICAgImRlbGF5X3Rl
+        bXBvIjogOSwNCiAgICAiZGlzdG9ydGlvbl9kcml2ZSI6IDAsDQogICAgImRpc3RvcnRpb25fbWl4IjogMSwNCiAgICAiZGlzdG9ydGlvbl9vbiI6IDAsDQogICAgImRp
+        c3RvcnRpb25fdHlwZSI6IDAsDQogICAgImZpbF9hdHRhY2siOiAwLA0KICAgICJmaWxfZGVjYXkiOiAxLjUsDQogICAgImZpbF9lbnZfZGVwdGgiOiAwLA0KICAgICJm
+        aWxfcmVsZWFzZSI6IDEuNSwNCiAgICAiZmlsX3N1c3RhaW4iOiAwLjUsDQogICAgImZpbHRlcl9ibGVuZCI6IDAsDQogICAgImZpbHRlcl9kcml2ZSI6IDAsDQogICAg
+        ImZpbHRlcl9vbiI6IDAsDQogICAgImZpbHRlcl9zaGVsZiI6IDAsDQogICAgImZpbHRlcl9zdHlsZSI6IDAsDQogICAgImZvcm1hbnRfb24iOiAwLA0KICAgICJmb3Jt
+        YW50X3giOiAwLjUsDQogICAgImZvcm1hbnRfeSI6IDAuNSwNCiAgICAia2V5dHJhY2siOiAwLA0KICAgICJsZWdhdG8iOiAwLA0KICAgICJtb2RfYXR0YWNrIjogMCwN
+        CiAgICAibW9kX2RlY2F5IjogMS41LA0KICAgICJtb2RfcmVsZWFzZSI6IDEuNSwNCiAgICAibW9kX3N1c3RhaW4iOiAwLjUsDQogICAgIm1vbm9fbGZvXzFfYW1wbGl0
+        dWRlIjogMSwNCiAgICAibW9ub19sZm9fMV9mcmVxdWVuY3kiOiAxLA0KICAgICJtb25vX2xmb18xX3JldHJpZ2dlciI6IDIsDQogICAgIm1vbm9fbGZvXzFfc3luYyI6
+        IDEsDQogICAgIm1vbm9fbGZvXzFfdGVtcG8iOiA2LA0KICAgICJtb25vX2xmb18xX3dhdmVmb3JtIjogMCwNCiAgICAibW9ub19sZm9fMl9hbXBsaXR1ZGUiOiAxLA0K
+        ICAgICJtb25vX2xmb18yX2ZyZXF1ZW5jeSI6IDEsDQogICAgIm1vbm9fbGZvXzJfcmV0cmlnZ2VyIjogMiwNCiAgICAibW9ub19sZm9fMl9zeW5jIjogMSwNCiAgICAi
+        bW9ub19sZm9fMl90ZW1wbyI6IDcsDQogICAgIm1vbm9fbGZvXzJfd2F2ZWZvcm0iOiAwLA0KICAgICJub2lzZV92b2x1bWUiOiAwLA0KICAgICJudW1fc3RlcHMiOiA4
+        LA0KICAgICJvc2NfMV90cmFuc3Bvc2UiOiAwLA0KICAgICJvc2NfMV90dW5lIjogMC4wNTYwMDAwNjk2MTgyMjUwMTIzOTEsDQogICAgIm9zY18xX3VuaXNvbl9kZXR1
+        bmUiOiAxMCwNCiAgICAib3NjXzFfdW5pc29uX3ZvaWNlcyI6IDEsDQogICAgIm9zY18xX3ZvbHVtZSI6IDAuNTQ3NzIyNTU3NDk5OTk5OTg0NjQsDQogICAgIm9zY18x
+        X3dhdmVmb3JtIjogMCwNCiAgICAib3NjXzJfdHJhbnNwb3NlIjogMCwNCiAgICAib3NjXzJfdHVuZSI6IDAsDQogICAgIm9zY18yX3VuaXNvbl9kZXR1bmUiOiAxMCwN
+        CiAgICAib3NjXzJfdW5pc29uX3ZvaWNlcyI6IDEsDQogICAgIm9zY18yX3ZvbHVtZSI6IDAuNTQ3NzIyNTU3NDk5OTk5OTg0NjQsDQogICAgIm9zY18yX3dhdmVmb3Jt
+        IjogMiwNCiAgICAib3NjX2ZlZWRiYWNrX2Ftb3VudCI6IDAsDQogICAgIm9zY19mZWVkYmFja190cmFuc3Bvc2UiOiAwLA0KICAgICJvc2NfZmVlZGJhY2tfdHVuZSI6
+        IDAsDQogICAgInBpdGNoX2JlbmRfcmFuZ2UiOiAyLA0KICAgICJwb2x5X2xmb19hbXBsaXR1ZGUiOiAxLA0KICAgICJwb2x5X2xmb19mcmVxdWVuY3kiOiAxLA0KICAg
+        ICJwb2x5X2xmb19zeW5jIjogMSwNCiAgICAicG9seV9sZm9fdGVtcG8iOiA3LA0KICAgICJwb2x5X2xmb193YXZlZm9ybSI6IDAsDQogICAgInBvbHlwaG9ueSI6IDQs
+        DQogICAgInBvcnRhbWVudG8iOiAtNywNCiAgICAicG9ydGFtZW50b190eXBlIjogMCwNCiAgICAicmVzb25hbmNlIjogMC41LA0KICAgICJyZXZlcmJfZGFtcGluZyI6
+        IDAuNSwNCiAgICAicmV2ZXJiX2RyeV93ZXQiOiAwLjUsDQogICAgInJldmVyYl9mZWVkYmFjayI6IDAuOTAwMDAwMDAwMDAwMDAwMDIyMiwNCiAgICAicmV2ZXJiX29u
+        IjogMCwNCiAgICAic3RlcF9mcmVxdWVuY3kiOiAyLA0KICAgICJzdGVwX3NlcV8wMCI6IDAsDQogICAgInN0ZXBfc2VxXzAxIjogMCwNCiAgICAic3RlcF9zZXFfMDIi
+        OiAwLA0KICAgICJzdGVwX3NlcV8wMyI6IDAsDQogICAgInN0ZXBfc2VxXzA0IjogMCwNCiAgICAic3RlcF9zZXFfMDUiOiAwLA0KICAgICJzdGVwX3NlcV8wNiI6IDAs
+        DQogICAgInN0ZXBfc2VxXzA3IjogMCwNCiAgICAic3RlcF9zZXFfMDgiOiAwLA0KICAgICJzdGVwX3NlcV8wOSI6IDAsDQogICAgInN0ZXBfc2VxXzEwIjogMCwNCiAg
+        ICAic3RlcF9zZXFfMTEiOiAwLA0KICAgICJzdGVwX3NlcV8xMiI6IDAsDQogICAgInN0ZXBfc2VxXzEzIjogMCwNCiAgICAic3RlcF9zZXFfMTQiOiAwLA0KICAgICJz
+        dGVwX3NlcV8xNSI6IDAsDQogICAgInN0ZXBfc2VxXzE2IjogMCwNCiAgICAic3RlcF9zZXFfMTciOiAwLA0KICAgICJzdGVwX3NlcV8xOCI6IDAsDQogICAgInN0ZXBf
+        c2VxXzE5IjogMCwNCiAgICAic3RlcF9zZXFfMjAiOiAwLA0KICAgICJzdGVwX3NlcV8yMSI6IDAsDQogICAgInN0ZXBfc2VxXzIyIjogMCwNCiAgICAic3RlcF9zZXFf
+        MjMiOiAwLA0KICAgICJzdGVwX3NlcV8yNCI6IDAsDQogICAgInN0ZXBfc2VxXzI1IjogMCwNCiAgICAic3RlcF9zZXFfMjYiOiAwLA0KICAgICJzdGVwX3NlcV8yNyI6
+        IDAsDQogICAgInN0ZXBfc2VxXzI4IjogMCwNCiAgICAic3RlcF9zZXFfMjkiOiAwLA0KICAgICJzdGVwX3NlcV8zMCI6IDAsDQogICAgInN0ZXBfc2VxXzMxIjogMCwN
+        CiAgICAic3RlcF9zZXF1ZW5jZXJfcmV0cmlnZ2VyIjogMiwNCiAgICAic3RlcF9zZXF1ZW5jZXJfc3luYyI6IDEsDQogICAgInN0ZXBfc2VxdWVuY2VyX3RlbXBvIjog
+        NywNCiAgICAic3RlcF9zbW9vdGhpbmciOiAwLA0KICAgICJzdHV0dGVyX2ZyZXF1ZW5jeSI6IDMsDQogICAgInN0dXR0ZXJfb24iOiAwLA0KICAgICJzdHV0dGVyX3Jl
+        c2FtcGxlX2ZyZXF1ZW5jeSI6IDEsDQogICAgInN0dXR0ZXJfcmVzYW1wbGVfc3luYyI6IDEsDQogICAgInN0dXR0ZXJfcmVzYW1wbGVfdGVtcG8iOiA2LA0KICAgICJz
+        dHV0dGVyX3NvZnRuZXNzIjogMC4yMDAwMDAwMDAwMDAwMDAwMTExLA0KICAgICJzdHV0dGVyX3N5bmMiOiAxLA0KICAgICJzdHV0dGVyX3RlbXBvIjogOCwNCiAgICAi
+        c3ViX29jdGF2ZSI6IDAsDQogICAgInN1Yl9zaHVmZmxlIjogMCwNCiAgICAic3ViX3ZvbHVtZSI6IDAsDQogICAgInN1Yl93YXZlZm9ybSI6IDIsDQogICAgInVuaXNv
+        bl8xX2hhcm1vbml6ZSI6IDAsDQogICAgInVuaXNvbl8yX2hhcm1vbml6ZSI6IDAsDQogICAgInZlbG9jaXR5X3RyYWNrIjogMCwNCiAgICAidm9sdW1lIjogMC40MjI0
+        NTMyMjQ2NTg5NjYwNjQ0NSwNCiAgICAibW9kdWxhdGlvbnMiOiBbXQ0KICB9DQp9AAAAAAAAAAAASlVDRVByaXZhdGVEYXRhAAEBQnlwYXNzAAEBAwAdAAAAAAAAAEpV
+        Q0VQcml2YXRlRGF0YQAAAAAAAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {2B8BF504-7D81-450D-9DBE-7D88C95BFDF7}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 22
+      SNAPOFFS 2
+      LENGTH 17.77690363713498
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8E48E2CF-F01D-4896-BE09-1E5B0E91830E}
+      IID 17
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E7DB0799-E844-4098-B0B5-1EDE3E580642}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {4BBC5D8A-B005-4D16-B96D-A01D69823912}
+        E 2400 90 3b 60
+        E 480 80 3b 00
+        E 0 90 40 60
+        E 480 80 40 00
+        E 0 90 42 60
+        E 480 80 42 00
+        E 0 90 43 60
+        E 1440 80 43 00
+        E 0 90 45 60
+        E 1440 80 45 00
+        E 0 90 47 60
+        E 960 80 47 00
+        E 0 90 48 60
+        E 1920 80 48 00
+        E 960 90 4a 60
+        E 480 80 4a 00
+        E 0 90 48 60
+        E 480 80 48 00
+        E 0 90 45 60
+        E 960 80 45 00
+        E 0 90 3e 60
+        E 480 80 3e 00
+        E 0 90 42 60
+        E 480 80 42 00
+        E 240 90 45 60
+        E 480 80 45 00
+        E 240 90 47 60
+        E 480 80 47 00
+        E 0 90 48 60
+        E 480 80 48 00
+        E 0 90 47 60
+        E 960 80 47 00
+        E 1200 90 47 60
+        E 480 80 47 00
+        E 240 90 4a 60
+        E 480 80 4a 00
+        E 0 90 4c 60
+        E 480 80 4c 00
+        E 0 90 4c 60
+        E 1440 80 4c 00
+        E 0 90 4a 60
+        E 960 80 4a 00
+        E 480 90 48 60
+        E 960 80 48 00
+        E 0 90 47 60
+        E 1920 80 47 00
+        E 960 90 4c 60
+        E 480 80 4c 00
+        E 0 90 4e 60
+        E 480 80 4e 00
+        E 0 90 4f 60
+        E 720 80 4f 00
+        E 720 90 4e 60
+        E 480 80 4e 00
+        E 240 90 4c 60
+        E 480 80 4c 00
+        E 240 90 4e 60
+        E 480 80 4e 00
+        E 0 90 4f 60
+        E 480 80 4f 00
+        E 0 90 4e 60
+        E 480 80 4e 00
+        E 0 90 4c 60
+        E 2400 80 4c 00
+        E 960 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {ABCB6C3A-3859-46B7-A413-2172F2E74E82}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 168
+        VELLANE -1 41 0
+        CFGEDITVIEW -2475.766395 0.016113 51 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 923 1004 2150 1776 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <TRACK {B8F45834-7BB9-49E0-9E32-937F80425316}
+    NAME Helm
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.67365116373859 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 1 5088 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B8F45834-7BB9-49E0-9E32-937F80425316}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 1122 197 1219 847
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST3i: Helm (Matt Tytel) (mono)" helm64.vst3 0 "" 820595496{56535448656C6D68656C6D0000000000} ""
+        KEvpMO5e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAAD2EAAAAQAAAP//EAA=
+        5hAAAAEAAABWc3RXAAAACAAAAAEAAAAAQ2NuSwAAEM5GQkNoAAAAAkhlbG0AAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQNnsNCiAgImxp
+        Y2Vuc2UiOiAiUGF0Y2ggKGMpIGJ5IC4gIFRoaXMgcGF0Y2ggaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5h
+        dGlvbmFsIExpY2Vuc2UuICBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBsaWNlbnNlIGFsb25nIHdpdGggdGhpcyB3b3JrLiAgSWYgbm90LCBz
+        ZWUgPGh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8+LiIsDQogICJzeW50aF92ZXJzaW9uIjogIjAuOS4wIiwNCiAgInBhdGNoX25hbWUi
+        OiAiIiwNCiAgImZvbGRlcl9uYW1lIjogIiIsDQogICJhdXRob3IiOiAiIiwNCiAgInNldHRpbmdzIjogew0KICAgICJhbXBfYXR0YWNrIjogMCwNCiAgICAiYW1wX2Rl
+        Y2F5IjogMS41LA0KICAgICJhbXBfcmVsZWFzZSI6IDAuMjk5OTk5OTk5OTk5OTk5OTg4OSwNCiAgICAiYW1wX3N1c3RhaW4iOiAxLA0KICAgICJhcnBfZnJlcXVlbmN5
+        IjogMiwNCiAgICAiYXJwX2dhdGUiOiAwLjUsDQogICAgImFycF9vY3RhdmVzIjogMSwNCiAgICAiYXJwX29uIjogMSwNCiAgICAiYXJwX3BhdHRlcm4iOiAwLA0KICAg
+        ICJhcnBfc3luYyI6IDEsDQogICAgImFycF90ZW1wbyI6IDExLA0KICAgICJiZWF0c19wZXJfbWludXRlIjogMiwNCiAgICAiY3Jvc3NfbW9kdWxhdGlvbiI6IDAuMTc3
+        OTk5OTg3NjAyMjMzOTAwMDQsDQogICAgImN1dG9mZiI6IDgwLA0KICAgICJkZWxheV9kcnlfd2V0IjogMC41LA0KICAgICJkZWxheV9mZWVkYmFjayI6IDAuNDAwMDAw
+        MDAwMDAwMDAwMDIyMiwNCiAgICAiZGVsYXlfZnJlcXVlbmN5IjogMiwNCiAgICAiZGVsYXlfb24iOiAwLA0KICAgICJkZWxheV9zeW5jIjogMSwNCiAgICAiZGVsYXlf
+        dGVtcG8iOiA5LA0KICAgICJkaXN0b3J0aW9uX2RyaXZlIjogMCwNCiAgICAiZGlzdG9ydGlvbl9taXgiOiAxLA0KICAgICJkaXN0b3J0aW9uX29uIjogMCwNCiAgICAi
+        ZGlzdG9ydGlvbl90eXBlIjogMCwNCiAgICAiZmlsX2F0dGFjayI6IDAsDQogICAgImZpbF9kZWNheSI6IDEuNSwNCiAgICAiZmlsX2Vudl9kZXB0aCI6IDAsDQogICAg
+        ImZpbF9yZWxlYXNlIjogMS41LA0KICAgICJmaWxfc3VzdGFpbiI6IDAuNSwNCiAgICAiZmlsdGVyX2JsZW5kIjogMCwNCiAgICAiZmlsdGVyX2RyaXZlIjogMCwNCiAg
+        ICAiZmlsdGVyX29uIjogMCwNCiAgICAiZmlsdGVyX3NoZWxmIjogMCwNCiAgICAiZmlsdGVyX3N0eWxlIjogMCwNCiAgICAiZm9ybWFudF9vbiI6IDAsDQogICAgImZv
+        cm1hbnRfeCI6IDAuNSwNCiAgICAiZm9ybWFudF95IjogMC41LA0KICAgICJrZXl0cmFjayI6IDAsDQogICAgImxlZ2F0byI6IDAsDQogICAgIm1vZF9hdHRhY2siOiAw
+        LA0KICAgICJtb2RfZGVjYXkiOiAxLjUsDQogICAgIm1vZF9yZWxlYXNlIjogMS41LA0KICAgICJtb2Rfc3VzdGFpbiI6IDAuNSwNCiAgICAibW9ub19sZm9fMV9hbXBs
+        aXR1ZGUiOiAxLA0KICAgICJtb25vX2xmb18xX2ZyZXF1ZW5jeSI6IDEsDQogICAgIm1vbm9fbGZvXzFfcmV0cmlnZ2VyIjogMiwNCiAgICAibW9ub19sZm9fMV9zeW5j
+        IjogMSwNCiAgICAibW9ub19sZm9fMV90ZW1wbyI6IDYsDQogICAgIm1vbm9fbGZvXzFfd2F2ZWZvcm0iOiAwLA0KICAgICJtb25vX2xmb18yX2FtcGxpdHVkZSI6IDEs
+        DQogICAgIm1vbm9fbGZvXzJfZnJlcXVlbmN5IjogMSwNCiAgICAibW9ub19sZm9fMl9yZXRyaWdnZXIiOiAyLA0KICAgICJtb25vX2xmb18yX3N5bmMiOiAxLA0KICAg
+        ICJtb25vX2xmb18yX3RlbXBvIjogNywNCiAgICAibW9ub19sZm9fMl93YXZlZm9ybSI6IDAsDQogICAgIm5vaXNlX3ZvbHVtZSI6IDAsDQogICAgIm51bV9zdGVwcyI6
+        IDgsDQogICAgIm9zY18xX3RyYW5zcG9zZSI6IDAsDQogICAgIm9zY18xX3R1bmUiOiAwLjEyMDAwMDE1MTYzNDIxNjQwMDk2LA0KICAgICJvc2NfMV91bmlzb25fZGV0
+        dW5lIjogMTAsDQogICAgIm9zY18xX3VuaXNvbl92b2ljZXMiOiAxLA0KICAgICJvc2NfMV92b2x1bWUiOiAwLjU0NzcyMjU1NzQ5OTk5OTk4NDY0LA0KICAgICJvc2Nf
+        MV93YXZlZm9ybSI6IDAsDQogICAgIm9zY18yX3RyYW5zcG9zZSI6IDAsDQogICAgIm9zY18yX3R1bmUiOiAwLA0KICAgICJvc2NfMl91bmlzb25fZGV0dW5lIjogMTAs
+        DQogICAgIm9zY18yX3VuaXNvbl92b2ljZXMiOiAxLA0KICAgICJvc2NfMl92b2x1bWUiOiAwLjU0NzcyMjU1NzQ5OTk5OTk4NDY0LA0KICAgICJvc2NfMl93YXZlZm9y
+        bSI6IDIsDQogICAgIm9zY19mZWVkYmFja19hbW91bnQiOiAwLA0KICAgICJvc2NfZmVlZGJhY2tfdHJhbnNwb3NlIjogMCwNCiAgICAib3NjX2ZlZWRiYWNrX3R1bmUi
+        OiAwLA0KICAgICJwaXRjaF9iZW5kX3JhbmdlIjogMiwNCiAgICAicG9seV9sZm9fYW1wbGl0dWRlIjogMSwNCiAgICAicG9seV9sZm9fZnJlcXVlbmN5IjogMSwNCiAg
+        ICAicG9seV9sZm9fc3luYyI6IDEsDQogICAgInBvbHlfbGZvX3RlbXBvIjogNywNCiAgICAicG9seV9sZm9fd2F2ZWZvcm0iOiAwLA0KICAgICJwb2x5cGhvbnkiOiA0
+        LA0KICAgICJwb3J0YW1lbnRvIjogLTcsDQogICAgInBvcnRhbWVudG9fdHlwZSI6IDAsDQogICAgInJlc29uYW5jZSI6IDAuNSwNCiAgICAicmV2ZXJiX2RhbXBpbmci
+        OiAwLjUsDQogICAgInJldmVyYl9kcnlfd2V0IjogMC41LA0KICAgICJyZXZlcmJfZmVlZGJhY2siOiAwLjkwMDAwMDAwMDAwMDAwMDAyMjIsDQogICAgInJldmVyYl9v
+        biI6IDAsDQogICAgInN0ZXBfZnJlcXVlbmN5IjogMiwNCiAgICAic3RlcF9zZXFfMDAiOiAwLA0KICAgICJzdGVwX3NlcV8wMSI6IDAsDQogICAgInN0ZXBfc2VxXzAy
+        IjogMCwNCiAgICAic3RlcF9zZXFfMDMiOiAwLA0KICAgICJzdGVwX3NlcV8wNCI6IDAsDQogICAgInN0ZXBfc2VxXzA1IjogMCwNCiAgICAic3RlcF9zZXFfMDYiOiAw
+        LA0KICAgICJzdGVwX3NlcV8wNyI6IDAsDQogICAgInN0ZXBfc2VxXzA4IjogMCwNCiAgICAic3RlcF9zZXFfMDkiOiAwLA0KICAgICJzdGVwX3NlcV8xMCI6IDAsDQog
+        ICAgInN0ZXBfc2VxXzExIjogMCwNCiAgICAic3RlcF9zZXFfMTIiOiAwLA0KICAgICJzdGVwX3NlcV8xMyI6IDAsDQogICAgInN0ZXBfc2VxXzE0IjogMCwNCiAgICAi
+        c3RlcF9zZXFfMTUiOiAwLA0KICAgICJzdGVwX3NlcV8xNiI6IDAsDQogICAgInN0ZXBfc2VxXzE3IjogMCwNCiAgICAic3RlcF9zZXFfMTgiOiAwLA0KICAgICJzdGVw
+        X3NlcV8xOSI6IDAsDQogICAgInN0ZXBfc2VxXzIwIjogMCwNCiAgICAic3RlcF9zZXFfMjEiOiAwLA0KICAgICJzdGVwX3NlcV8yMiI6IDAsDQogICAgInN0ZXBfc2Vx
+        XzIzIjogMCwNCiAgICAic3RlcF9zZXFfMjQiOiAwLA0KICAgICJzdGVwX3NlcV8yNSI6IDAsDQogICAgInN0ZXBfc2VxXzI2IjogMCwNCiAgICAic3RlcF9zZXFfMjci
+        OiAwLA0KICAgICJzdGVwX3NlcV8yOCI6IDAsDQogICAgInN0ZXBfc2VxXzI5IjogMCwNCiAgICAic3RlcF9zZXFfMzAiOiAwLA0KICAgICJzdGVwX3NlcV8zMSI6IDAs
+        DQogICAgInN0ZXBfc2VxdWVuY2VyX3JldHJpZ2dlciI6IDIsDQogICAgInN0ZXBfc2VxdWVuY2VyX3N5bmMiOiAxLA0KICAgICJzdGVwX3NlcXVlbmNlcl90ZW1wbyI6
+        IDcsDQogICAgInN0ZXBfc21vb3RoaW5nIjogMCwNCiAgICAic3R1dHRlcl9mcmVxdWVuY3kiOiAzLA0KICAgICJzdHV0dGVyX29uIjogMCwNCiAgICAic3R1dHRlcl9y
+        ZXNhbXBsZV9mcmVxdWVuY3kiOiAxLA0KICAgICJzdHV0dGVyX3Jlc2FtcGxlX3N5bmMiOiAxLA0KICAgICJzdHV0dGVyX3Jlc2FtcGxlX3RlbXBvIjogNiwNCiAgICAi
+        c3R1dHRlcl9zb2Z0bmVzcyI6IDAuMjAwMDAwMDAwMDAwMDAwMDExMSwNCiAgICAic3R1dHRlcl9zeW5jIjogMSwNCiAgICAic3R1dHRlcl90ZW1wbyI6IDgsDQogICAg
+        InN1Yl9vY3RhdmUiOiAwLA0KICAgICJzdWJfc2h1ZmZsZSI6IDAsDQogICAgInN1Yl92b2x1bWUiOiAwLA0KICAgICJzdWJfd2F2ZWZvcm0iOiAyLA0KICAgICJ1bmlz
+        b25fMV9oYXJtb25pemUiOiAwLA0KICAgICJ1bmlzb25fMl9oYXJtb25pemUiOiAwLA0KICAgICJ2ZWxvY2l0eV90cmFjayI6IDAsDQogICAgInZvbHVtZSI6IDAuNDIy
+        NDUzMjI0NjU4OTY2MDY0NDUsDQogICAgIm1vZHVsYXRpb25zIjogW10NCiAgfQ0KfQAAAAAAAAAAAEpVQ0VQcml2YXRlRGF0YQABAUJ5cGFzcwABAQMAHQAAAAAAAABK
+        VUNFUHJpdmF0ZURhdGEAAAAAAAAAAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {739BD921-FE3E-4525-AA14-BE66147D1981}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 32
+      SNAPOFFS 0
+      LENGTH 8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B3BFB480-2055-4DE4-82B8-D63C63671A38}
+      IID 17
+      NAME "Helm untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 8 16
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CFC8D5A9-009A-4CD5-8D7F-A5D0A32879AD}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {A4A2C478-F190-4FA9-BEB9-E4CBE27FD9CE}
+        E 0 90 40 7f
+        E 0 90 43 7f
+        E 0 90 47 7f
+        E 1440 80 40 00
+        E 0 80 43 00
+        E 0 80 47 00
+        E 720 90 40 7f
+        E 0 90 43 7f
+        E 0 90 47 7f
+        E 240 80 40 00
+        E 0 80 43 00
+        E 0 80 47 00
+        E 480 90 40 7f
+        E 0 90 43 7f
+        E 0 90 47 7f
+        E 240 80 40 00
+        E 0 80 43 00
+        E 0 80 47 00
+        e 240 90 40 7f
+        e 0 90 43 7f
+        e 0 90 47 7f
+        e 240 80 40 00
+        e 0 80 43 00
+        e 0 80 47 00
+        E 240 90 40 7f
+        E 0 90 43 7f
+        E 0 90 3b 7f
+        E 1440 80 40 00
+        E 0 80 43 00
+        E 0 80 3b 00
+        E 720 90 40 7f
+        E 0 90 43 7f
+        E 0 90 3b 7f
+        E 240 80 40 00
+        E 0 80 43 00
+        E 0 80 3b 00
+        E 480 90 40 7f
+        E 0 90 43 7f
+        E 0 90 3b 7f
+        E 240 80 40 00
+        E 0 80 43 00
+        E 0 80 3b 00
+        e 240 90 40 7f
+        e 0 90 43 7f
+        e 0 90 3b 7f
+        e 240 80 40 00
+        e 0 80 43 00
+        e 0 80 3b 00
+        E 240 90 42 7f
+        E 0 90 3e 7f
+        E 0 90 39 7f
+        E 1440 80 42 00
+        E 0 80 3e 00
+        E 0 80 39 00
+        E 720 90 42 7f
+        E 0 90 3e 7f
+        E 0 90 39 7f
+        E 240 80 42 00
+        E 0 80 3e 00
+        E 0 80 39 00
+        E 480 90 42 7f
+        E 0 90 3e 7f
+        E 0 90 39 7f
+        E 240 80 42 00
+        E 0 80 3e 00
+        E 0 80 39 00
+        e 240 90 42 7f
+        e 0 90 3e 7f
+        e 0 90 39 7f
+        e 240 80 42 00
+        e 0 80 3e 00
+        e 0 80 39 00
+        E 240 90 40 7f
+        E 0 90 43 7f
+        E 0 90 3b 7f
+        E 1440 80 40 00
+        E 0 80 43 00
+        E 0 80 3b 00
+        E 720 90 40 7f
+        E 0 90 43 7f
+        E 0 90 3b 7f
+        E 240 80 40 00
+        E 0 80 43 00
+        E 0 80 3b 00
+        E 480 90 40 7f
+        E 0 90 43 7f
+        E 0 90 3b 7f
+        E 240 80 40 00
+        E 0 80 43 00
+        E 0 80 3b 00
+        e 240 90 40 7f
+        e 0 90 43 7f
+        e 0 90 3b 7f
+        e 240 80 40 00
+        e 0 80 43 00
+        e 0 80 3b 00
+        E 240 90 4c 60
+        E 0 90 47 7f
+        E 0 90 43 7f
+        E 1440 80 4c 00
+        E 0 80 47 00
+        E 0 80 43 00
+        E 720 90 4c 60
+        E 0 90 47 7f
+        E 0 90 43 7f
+        E 240 80 4c 00
+        E 0 80 47 00
+        E 0 80 43 00
+        E 480 90 4c 60
+        E 0 90 47 7f
+        E 0 90 43 7f
+        E 240 80 4c 00
+        E 0 80 47 00
+        E 0 80 43 00
+        E 240 90 4c 60
+        E 0 90 47 7f
+        E 0 90 43 7f
+        E 240 80 4c 00
+        E 0 80 47 00
+        E 0 80 43 00
+        E 240 90 47 60
+        E 0 90 43 60
+        E 0 90 40 60
+        E 1440 80 47 00
+        E 0 80 43 00
+        E 0 80 40 00
+        E 720 90 47 60
+        E 0 90 43 60
+        E 0 90 40 60
+        E 240 80 47 00
+        E 0 80 43 00
+        E 0 80 40 00
+        E 480 90 47 60
+        E 0 90 43 60
+        E 0 90 40 60
+        E 240 80 47 00
+        E 0 80 43 00
+        E 0 80 40 00
+        E 240 90 47 60
+        E 0 90 43 60
+        E 0 90 40 60
+        E 240 80 47 00
+        E 0 80 43 00
+        E 0 80 40 00
+        E 240 90 4f 60
+        E 0 90 4c 60
+        E 0 90 4a 60
+        E 1440 80 4f 00
+        E 0 80 4c 00
+        E 0 80 4a 00
+        E 720 90 4f 60
+        E 0 90 4c 60
+        E 0 90 4a 60
+        E 240 80 4f 00
+        E 0 80 4c 00
+        E 0 80 4a 00
+        E 480 90 4f 60
+        E 0 90 4c 60
+        E 0 90 4a 60
+        E 240 80 4f 00
+        E 0 80 4c 00
+        E 0 80 4a 00
+        E 240 90 4f 60
+        E 0 90 4c 60
+        E 0 90 4a 60
+        E 240 80 4f 00
+        E 0 80 4c 00
+        E 0 80 4a 00
+        E 240 90 4c 60
+        E 0 90 47 60
+        E 0 90 4f 60
+        E 1440 80 4c 00
+        E 0 80 47 00
+        E 0 80 4f 00
+        E 720 90 4c 60
+        E 0 90 47 60
+        E 0 90 4f 60
+        E 240 80 4c 00
+        E 0 80 47 00
+        E 0 80 4f 00
+        E 480 90 4c 60
+        E 0 90 47 60
+        E 0 90 4f 60
+        E 240 80 4c 00
+        E 0 80 47 00
+        E 0 80 4f 00
+        E 240 90 4c 60
+        E 0 90 47 60
+        E 0 90 4f 60
+        E 240 80 4c 00
+        E 0 80 47 00
+        E 0 80 4f 00
+        E 240 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {ABCB6C3A-3859-46B7-A413-2172F2E74E82}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 168
+        VELLANE -1 41 0
+        CFGEDITVIEW -2454.588855 0.016113 38 12 0 -1 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 189
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.25 1121 395 2348 1167 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+    >
+  >
+  <EXTENSIONS
+  >
+>
